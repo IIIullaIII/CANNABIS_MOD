@@ -4,10 +4,10 @@
 --
 -- Picks______________________________________________________________________________
 --
-
+local S = cannabis.S
 
 minetest.register_tool("cannabis:pick_hemp_steel", {
-	description = "HSteel Pickaxe",
+	description = S("Hemp Steel Pickaxe"),
 	inventory_image = "cannabis_tool_steelpick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -19,7 +19,7 @@ minetest.register_tool("cannabis:pick_hemp_steel", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_bronze", {
-	description = "HBronze Pickaxe",
+	description = S("Hemp Bronze Pickaxe"),
 	inventory_image = "cannabis_tool_bronzepick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -31,7 +31,7 @@ minetest.register_tool("cannabis:pick_hemp_bronze", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_mese", {
-	description = "HMese Pickaxe",
+	description = S("Hemp Mese Pickaxe"),
 	inventory_image = "cannabis_tool_mesepick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -43,7 +43,7 @@ minetest.register_tool("cannabis:pick_hemp_mese", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_diamond", {
-	description = "HDiamond Pickaxe",
+	description = S("Hemp Diamond Pickaxe"),
 	inventory_image = "cannabis_tool_diamondpick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -55,7 +55,7 @@ minetest.register_tool("cannabis:pick_hemp_diamond", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_high", {
-	description = "Hemp_high Pickaxe",
+	description = S("Hemp Pickaxe"),
 	inventory_image = "cannabis_tool_highpick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -71,7 +71,7 @@ minetest.register_tool("cannabis:pick_hemp_high", {
 --
 
 minetest.register_tool("cannabis:shovel_hemp_high", {
-	description = "Hemp_high Shovel",
+	description = S("Hemp Shovel"),
 	inventory_image = "cannabis_tool_highshovel.png",
 	wield_image = "cannabis_tool_highshovel.png^[transformR90",
 	tool_capabilities = {
@@ -85,7 +85,7 @@ minetest.register_tool("cannabis:shovel_hemp_high", {
 })
 
 minetest.register_tool("cannabis:shovel_hemp_steel", {
-	description = "HSteel Shovel",
+	description = S("Hemp Steel Shovel"),
 	inventory_image = "cannabis_tool_steelshovel.png",
 	wield_image = "cannabis_tool_steelshovel.png^[transformR90",
 	tool_capabilities = {
@@ -98,7 +98,7 @@ minetest.register_tool("cannabis:shovel_hemp_steel", {
 	},
 })
 minetest.register_tool("cannabis:shovel_hemp_bronze", {
-	description = "HBronze Shovel",
+	description = S("Hemp Bronze Shovel"),
 	inventory_image = "cannabis_tool_bronzeshovel.png",
 	wield_image = "cannabis_tool_bronzeshovel.png^[transformR90",
 	tool_capabilities = {
@@ -111,7 +111,7 @@ minetest.register_tool("cannabis:shovel_hemp_bronze", {
 	},
 })
 minetest.register_tool("cannabis:shovel_hemp_mese", {
-	description = "HMese Shovel",
+	description = S("Hemp Mese Shovel"),
 	inventory_image = "cannabis_tool_meseshovel.png",
 	wield_image = "cannabis_tool_meseshovel.png^[transformR90",
 	tool_capabilities = {
@@ -124,7 +124,7 @@ minetest.register_tool("cannabis:shovel_hemp_mese", {
 	},
 })
 minetest.register_tool("cannabis:shovel_hemp_diamond", {
-	description = "HDiamond Shovel",
+	description = S("Hemp Diamond Shovel"),
 	inventory_image = "cannabis_tool_diamondshovel.png",
 	wield_image = "cannabis_tool_diamondshovel.png^[transformR90",
 	tool_capabilities = {
@@ -157,7 +157,7 @@ minetest.register_tool("cannabis:shovel_hemp_diamond", {
 -- Axes____________________________________________________________________________________________________
 --
 minetest.register_tool("cannabis:axe_hemp_steel", {
-	description = "HSteel Axe",
+	description = S("Hemp Steel Axe"),
 	inventory_image = "cannabis_tool_steelaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -169,7 +169,7 @@ minetest.register_tool("cannabis:axe_hemp_steel", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_bronze", {
-	description = "HBronze Axe",
+	description = S("Hemp Bronze Axe"),
 	inventory_image = "cannabis_tool_bronzeaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -181,7 +181,7 @@ minetest.register_tool("cannabis:axe_hemp_bronze", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_mese", {
-	description = "HMese Axe",
+	description = S("Hemp Mese Axe"),
 	inventory_image = "cannabis_tool_meseaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -193,7 +193,7 @@ minetest.register_tool("cannabis:axe_hemp_mese", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_diamond", {
-	description = "HDiamond Axe",
+	description = S("Hemp Diamond Axe"),
 	inventory_image = "cannabis_tool_diamondaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -205,7 +205,7 @@ minetest.register_tool("cannabis:axe_hemp_diamond", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_high", {
-	description = "Hemp_high Axe",
+	description = S("Hemp High Performance Axe"),
 	inventory_image = "cannabis_tool_highaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -220,7 +220,7 @@ minetest.register_tool("cannabis:axe_hemp_high", {
 -- Swords___________________________________________________________________________________________________
 
 minetest.register_tool("cannabis:sword_hemp_steel", {
-	description = "HSteel Sword",
+	description = S("Hemp Steel Sword"),
 	inventory_image = "cannabis_tool_steelsword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.8,
@@ -232,7 +232,7 @@ minetest.register_tool("cannabis:sword_hemp_steel", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_bronze", {
-	description = "HBronze Sword",
+	description = S("Hemp Bronze Sword"),
 	inventory_image = "cannabis_tool_bronzesword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.8,
@@ -244,7 +244,7 @@ minetest.register_tool("cannabis:sword_hemp_bronze", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_mese", {
-	description = "HMese Sword",
+	description = S("Hemp Mese Sword"),
 	inventory_image = "cannabis_tool_mesesword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -256,7 +256,7 @@ minetest.register_tool("cannabis:sword_hemp_mese", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_diamond", {
-	description = "HDiamond Sword",
+	description = S("Hemp Diamond Sword"),
 	inventory_image = "cannabis_tool_diamondsword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -268,7 +268,7 @@ minetest.register_tool("cannabis:sword_hemp_diamond", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_high", {
-	description = "Hemp_high Sword",
+	description = S("Hemp High Performance Sword"),
 	inventory_image = "cannabis_tool_highsword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,

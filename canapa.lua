@@ -1,8 +1,10 @@
 minetest.register_alias("canapa", "cannabis:canapa")
 --nodes
 
+local S = cannabis.S
+
 minetest.register_node("cannabis:canapa", {
-	description = "canapa",
+	description = S("Hemp"),
 	drawtype = "plantlike",
 	tiles = {"cannabis_canapa.png"},
 	inventory_image = "cannabis_canapa.png",
