@@ -70,7 +70,7 @@ end
 register_block("cannabis:cannabis_fibra_block", "cannabis:fibra_ingot")
 register_block("cannabis:cannabis_high_performance_block", "cannabis:high_performance_ingot")
 register_block("cannabis:cannabis_tessuto_block", "cannabis:tessuto_ingot")
-register_block("cannabis:cannabis_foglie_block", "cannabis:foglie_ingot")
+--register_block("cannabis:cannabis_foglie_block", "cannabis:foglie_ingot")
 register_block("cannabis:cannabis_adminh_block", "cannabis:adminh_ingot")
 
 minetest.register_node("cannabis:hp_block_canapa", 
@@ -89,7 +89,13 @@ minetest.register_node("cannabis:cannabis_foglie_block", {
 	groups = {cracky=1, level=2},
 	sounds = "cannabis:cannabis_canapa_s3"
 })
-
+minetest.register_node("cannabis:cannabis_foglie_red_block", {
+	description = ("Foglie Block"),
+	tiles = { "cannabis_foglie_red_block.png" },
+	is_ground_content = false,
+	groups = {cracky=1, level=2},
+	sounds = "cannabis:cannabis_canapa_s3"
+})
 minetest.register_node("cannabis:cannabis_tessuto_block", {
 	description = ("Tessuto Block"),
 	tiles = { "cannabis_tessuto_block.png" },

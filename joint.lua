@@ -155,7 +155,7 @@ minetest.register_craft({
         {"cannabis:joint_erba_spento","cannabis:joint_accendino",""},
 	}
 })
---TODO---------------------------------------
+-----------------------------------------
 --local smokeCOLOR = {
    -- green = { a=64, r=1, g=255, b=1 } ,
    -- blue  = { a=64, r=1, g=1,   b=25 },

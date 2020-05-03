@@ -72,7 +72,14 @@ minetest.register_craft({
                 {"cannabis:canapa_red_flower","cannabis:canapa_red_flower",""},
 	}
 })
-        
+       minetest.register_craft({
+	output = "cannabis:climbing_r ",
+	recipe = {
+		{"cannabis:canapa_red_leaves","cannabis:canapa_red_leaves","cannabis:canapa_red_leaves"},
+                {"cannabis:canapa_red_leaves","cannabis:canapa_red_leaves","cannabis:canapa_red_leaves"},
+                {"cannabis:canapa_red_leaves","cannabis:canapa_red_leaves","cannabis:canapa_red_leaves"},
+	}
+}) 
 
 minetest.register_craft({
 	output = "cannabis:canapa_red_flower 5 ",
@@ -133,14 +140,22 @@ minetest.register_craft({
 	recipe = "cannabis:canapa_flour"
 })
 
-minetest.register_craft({
-	type = "shapeless",
-	output = "cannabis:climbing 30",
-	recipe = {"cannabis:cannabis_foglie_block", "cannabis:cannabis_foglie_block", "cannabis:cannabis_foglie_block"}
-})
+ minetest.register_craft({
+	output = "cannabis:cannabis_foglie_red_block ",
+	recipe = {
+		{"cannabis:climbing_r","cannabis:climbing_r","cannabis:climbing_r"},
+         {"cannabis:climbing_r","cannabis:climbing_r","cannabis:climbing_r"},
+           {"cannabis:climbing_r","cannabis:climbing_r","cannabis:climbing_r"},
+	}
+})   
 
 minetest.register_craft({
 	type = "shapeless",
 	output = "cannabis:mixed_hr_ingot 3",
 	recipe = {"cannabis:fibra_ingot", "cannabis:foglie_ingot", "cannabis:tessuto_ingot"}
+})
+minetest.register_craft({
+	type = "shapeless",
+	output = "cannabis:climbing_r 9",
+	recipe = {"cannabis:cannabis_foglie_red_block", "", ""}
 })
