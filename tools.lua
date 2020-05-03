@@ -4,10 +4,10 @@
 --
 -- Picks______________________________________________________________________________
 --
-local S = cannabis.S
+
 
 minetest.register_tool("cannabis:pick_hemp_steel", {
-	description = S("Hemp Steel Pickaxe"),
+	description = "HSteel Pickaxe",
 	inventory_image = "cannabis_tool_steelpick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -19,7 +19,7 @@ minetest.register_tool("cannabis:pick_hemp_steel", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_bronze", {
-	description = S("Hemp Bronze Pickaxe"),
+	description = "HBronze Pickaxe",
 	inventory_image = "cannabis_tool_bronzepick.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -31,7 +31,7 @@ minetest.register_tool("cannabis:pick_hemp_bronze", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_mese", {
-	description = S("Hemp Mese Pickaxe"),
+	description = "HMese Pickaxe",
 	inventory_image = "cannabis_tool_mesepick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -43,19 +43,19 @@ minetest.register_tool("cannabis:pick_hemp_mese", {
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_diamond", {
-	description = S("Hemp Diamond Pickaxe"),
+	description = "HDiamond Pickaxe",
 	inventory_image = "cannabis_tool_diamondpick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=30, maxlevel=3},
+			cracky = {times={[1]=0.5, [2]=0.4, [3]=0.3}, uses=30, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
 })
 minetest.register_tool("cannabis:pick_hemp_high", {
-	description = S("Hemp Pickaxe"),
+	description = "Hemp_high Pickaxe",
 	inventory_image = "cannabis_tool_highpick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -66,12 +66,40 @@ minetest.register_tool("cannabis:pick_hemp_high", {
 		damage_groups = {fleshy=5},
 	},
 })
+
+minetest.register_tool("cannabis:pick_hemp_adminh", {
+	description = "Hemp_adminh Pickaxe",
+	inventory_image = "cannabis_tool_adminhpick.png",
+	tool_capabilities = {
+		full_punch_interval = 0.35,
+		max_drop_level=3,
+			groupcaps= {
+			unbreakable = {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			fleshy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			choppy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			bendy =       {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		},
+		damage_groups = {fleshy=10000},
+	},
+})
+minetest.register_on_punchnode(function(pos, node, puncher)
+	if puncher:get_wielded_item():get_name() == "cannabis:pick_hemp_adminh"
+	and minetest.get_node(pos).name ~= "air" then
+		minetest.log("action", puncher:get_player_name() .. " digs " .. minetest.get_node(pos).name .. " at " .. minetest.pos_to_string(pos) .. " using an Admin Pickaxe.")
+		minetest.remove_node(pos) -- The node is removed directly, which means it even works on non-empty containers and group-less nodes.
+		minetest.check_for_falling(pos) -- Run node update actions like falling nodes.
+	end
+end)
 --
 -- Shovels___________________________________________________________________________________________________________
 --
 
+
 minetest.register_tool("cannabis:shovel_hemp_high", {
-	description = S("Hemp Shovel"),
+	description = "Hemp_high Shovel",
 	inventory_image = "cannabis_tool_highshovel.png",
 	wield_image = "cannabis_tool_highshovel.png^[transformR90",
 	tool_capabilities = {
@@ -85,7 +113,7 @@ minetest.register_tool("cannabis:shovel_hemp_high", {
 })
 
 minetest.register_tool("cannabis:shovel_hemp_steel", {
-	description = S("Hemp Steel Shovel"),
+	description = "HSteel Shovel",
 	inventory_image = "cannabis_tool_steelshovel.png",
 	wield_image = "cannabis_tool_steelshovel.png^[transformR90",
 	tool_capabilities = {
@@ -98,7 +126,7 @@ minetest.register_tool("cannabis:shovel_hemp_steel", {
 	},
 })
 minetest.register_tool("cannabis:shovel_hemp_bronze", {
-	description = S("Hemp Bronze Shovel"),
+	description = "HBronze Shovel",
 	inventory_image = "cannabis_tool_bronzeshovel.png",
 	wield_image = "cannabis_tool_bronzeshovel.png^[transformR90",
 	tool_capabilities = {
@@ -111,7 +139,7 @@ minetest.register_tool("cannabis:shovel_hemp_bronze", {
 	},
 })
 minetest.register_tool("cannabis:shovel_hemp_mese", {
-	description = S("Hemp Mese Shovel"),
+	description = "HMese Shovel",
 	inventory_image = "cannabis_tool_meseshovel.png",
 	wield_image = "cannabis_tool_meseshovel.png^[transformR90",
 	tool_capabilities = {
@@ -124,7 +152,7 @@ minetest.register_tool("cannabis:shovel_hemp_mese", {
 	},
 })
 minetest.register_tool("cannabis:shovel_hemp_diamond", {
-	description = S("Hemp Diamond Shovel"),
+	description = "HDiamond Shovel",
 	inventory_image = "cannabis_tool_diamondshovel.png",
 	wield_image = "cannabis_tool_diamondshovel.png^[transformR90",
 	tool_capabilities = {
@@ -157,7 +185,7 @@ minetest.register_tool("cannabis:shovel_hemp_diamond", {
 -- Axes____________________________________________________________________________________________________
 --
 minetest.register_tool("cannabis:axe_hemp_steel", {
-	description = S("Hemp Steel Axe"),
+	description = "HSteel Axe",
 	inventory_image = "cannabis_tool_steelaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -169,7 +197,7 @@ minetest.register_tool("cannabis:axe_hemp_steel", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_bronze", {
-	description = S("Hemp Bronze Axe"),
+	description = "HBronze Axe",
 	inventory_image = "cannabis_tool_bronzeaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -181,7 +209,7 @@ minetest.register_tool("cannabis:axe_hemp_bronze", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_mese", {
-	description = S("Hemp Mese Axe"),
+	description = "HMese Axe",
 	inventory_image = "cannabis_tool_meseaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -193,7 +221,7 @@ minetest.register_tool("cannabis:axe_hemp_mese", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_diamond", {
-	description = S("Hemp Diamond Axe"),
+	description = "HDiamond Axe",
 	inventory_image = "cannabis_tool_diamondaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -205,7 +233,7 @@ minetest.register_tool("cannabis:axe_hemp_diamond", {
 	},
 })
 minetest.register_tool("cannabis:axe_hemp_high", {
-	description = S("Hemp High Performance Axe"),
+	description = "Hemp_high Axe",
 	inventory_image = "cannabis_tool_highaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -220,7 +248,7 @@ minetest.register_tool("cannabis:axe_hemp_high", {
 -- Swords___________________________________________________________________________________________________
 
 minetest.register_tool("cannabis:sword_hemp_steel", {
-	description = S("Hemp Steel Sword"),
+	description = "HSteel Sword",
 	inventory_image = "cannabis_tool_steelsword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.8,
@@ -232,7 +260,7 @@ minetest.register_tool("cannabis:sword_hemp_steel", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_bronze", {
-	description = S("Hemp Bronze Sword"),
+	description = "HBronze Sword",
 	inventory_image = "cannabis_tool_bronzesword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.8,
@@ -244,7 +272,7 @@ minetest.register_tool("cannabis:sword_hemp_bronze", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_mese", {
-	description = S("Hemp Mese Sword"),
+	description = "HMese Sword",
 	inventory_image = "cannabis_tool_mesesword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -256,7 +284,7 @@ minetest.register_tool("cannabis:sword_hemp_mese", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_diamond", {
-	description = S("Hemp Diamond Sword"),
+	description = "HDiamond Sword",
 	inventory_image = "cannabis_tool_diamondsword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -268,19 +296,61 @@ minetest.register_tool("cannabis:sword_hemp_diamond", {
 	}
 })
 minetest.register_tool("cannabis:sword_hemp_high", {
-	description = S("Hemp High Performance Sword"),
+	description = "Hemp_high Sword",
 	inventory_image = "cannabis_tool_highsword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=1.80, [2]=0.80, [3]=0.25}, uses=50, maxlevel=3},
+			snappy={times={[1]=0.8, [2]=0.8, [3]=0.25}, uses=50, maxlevel=3},
 		},
 		damage_groups = {fleshy=9},
 	}
 })
 
+
+---
+--minetest.register_tool("cannabis:sword_hemp_adminh", {
+	--description = "Hemp_adminh Sword",
+	--inventory_image = "cannabis_tool_adminhsword.png",
+	--tool_capabilities = {
+		--full_punch_interval = 0.5,
+		--max_drop_level=1,
+		--groupcaps={
+			--unbreakable = {times={[1] = 0.1, [2] = 0.1, [3] = 0.1}, uses = 0, maxlevel = 30},
+			--snappy={times={[1]=0.1, [2]=0.1, [3]=0.1}, uses=99, maxlevel=30},
+		--},
+		--damage_groups = {fleshy=100000},
+	--}
+--})
 --CRAFT RECIPE
+minetest.register_tool("cannabis:pick_hemp_adminh", {
+	description = "Hemp_adminh Sword",
+	inventory_image = "cannabis_tool_adminhsword.png",
+	tool_capabilities = {
+		full_punch_interval = 0.35,
+		max_drop_level=3,
+			groupcaps= {
+			unbreakable = {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			fleshy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			choppy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			--bendy =       {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			--cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			--crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
+		},
+		damage_groups = {fleshy=10000},
+	},
+})
+minetest.register_on_punchnode(function(pos, node, puncher)
+	if puncher:get_wielded_item():get_name() == "cannabis:sword_hemp_adminh"
+	and minetest.get_node(pos).name ~= "air" then
+		minetest.log("action", puncher:get_player_name() .. " digs " .. minetest.get_node(pos).name .. " at " .. minetest.pos_to_string(pos) .. " using an Admin Pickaxe.")
+		minetest.remove_node(pos) -- The node is removed directly, which means it even works on non-empty containers and group-less nodes.
+		minetest.check_for_falling(pos) -- Run node update actions like falling nodes.
+	end
+end)
+
 
 --pick:___________________________________________________________________
 
