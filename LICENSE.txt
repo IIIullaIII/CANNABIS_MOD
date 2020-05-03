@@ -1,0 +1,89 @@
+Copyright (C) "BY ULLA"
+IT
+PUOI UTILIZZARE QUESTA MOD IN MINETEST,
+PUOI INTEGRARLA IN ALTRE MOD PER MINETEST 
+O UTILIZZARNE  SINGOLE PARTI
+QUESTA MOD HA SOLO UNA RESTRIZIONE : 
+OGNI PARTE ORIGINALE CREATA DA ME (TEXTURES MODELLI ETC..) 
+NON PUÒ ESSERE UTILIZZATA PER SCOPI PUBBLICITARI O ALTRI GIOCHI ESCLUDENDO  LA MIA APPROVAZIONE IN OGNI CASO VA INDICATO IL MIO NOME >ANDREA DI PIETRO ULLA < 
+PER QUANTO RIGUARDA IL CODICE SCRITTO,  LE LICENZE SONO QUELLE DI MINETEST DEFAULT 
+ANCHE PER IL CODICE AGGIUNTO  O MODIFICATO ,
+QUESTA LICENZA DEVE ESSERE INSERITA IN OGNI PROGETTO CHE USA LA MOD O PARTE DI ESSA .
+QUESTA MOD PUÒ ESSERE MIGLIORATA , SENZA  ESCLUDERE IL MIO NOME  PER AVERE IDEATO E CREATO LA MOD   
+PUOI UTILIZZARLA NEI TUOI VIDEO PER MINETEST
+
+FOR THE REST OF THE CODE THE LICENSE IS OF THE TYPE: MIT
+
+  L'autorizzazione è concessa, gratuitamente, 
+  a chiunque ottenga una copia di questo software e dei file di documentazione associati (il "Software"),
+  per trattare il Software senza restrizioni,
+  inclusi senza limitazione i diritti di utilizzo, copia, modifica, unione , pubblicare, distribuire, 
+  concedere in sublicenza e / o vendere copie del Software e per consentire alle persone a cui il Software è fornito di farlo,
+  fatte salve le seguenti condizioni:
+  La nota di copyright e il presente avviso di autorizzazione di cui sopra devono essere inclusi in tutte le copie o parti sostanziali del software.
+  IL SOFTWARE È FORNITO "COSÌ COM'È", SENZA ALCUN TIPO DI GARANZIA, ESPRESSA O IMPLICITA, COMPRESO MA NON LIMITATO ALLE GARANZIE DI COMMERCIABILITÀ,
+  IDONEITÀ PER UNO SCOPO PARTICOLARE E NON VIOLAZIONE. IN NESSUN CASO GLI AUTORI OI TITOLARI DEL COPYRIGHT SARANNO RESPONSABILI DI QUALSIASI RECLAMO,
+  DANNO O ALTRO RESPONSABILITÀ, SE IN AZIONE DI CONTRATTO, TORT O ALTRO, DERIVANTE DA, 
+  FUORI O IN CONNESSIONE CON IL SOFTWARE O L'UTILIZZO O ALTRE OFFERTE NEL SOFTWARE.
+  
+  IL CODICE DELLE ARMATURE DIPENDONO DALLA LICENZA DI 3D_ARMOR 
+3D Armor - Visible Player Armor
+===============================
+
+License Source Code: Copyright (C) 2013-2018 Stuart Jones - LGPL v2.1
+
+Armor Textures: Copyright (C) 2017-2018 davidthecreator - CC-BY-SA 3.0
+
+Special credit to Jordach and MirceaKitsune for providing the default 3d character model.
+
+PER I MEDIA FILE LA LICENZA E'DI TIPO: CC BY-NC
+Permette di distribuire, modificare, 
+creare opere derivate dall'originale,
+ ma non a scopi commerciali, 
+ a condizione che venga: riconosciuta una menzione di paternità adeguata, 
+ fornito un link alla licenza e indicato se sono state effettuate delle modifiche.
+Chi modifica l'opera originale non è tenuto a utilizzare le stesse licenze per le opere derivate.
+
+
+EN)
+YOU CAN USE THIS MOD IN MINETEST,
+YOU CAN INTEGRATE IT IN OTHER MOD FOR MINETEST
+OR USE SINGLE PARTS
+THIS MOD HAS A RESTRICTION ONLY:
+EVERY ORIGINAL PART MADE BY ME (TEXTURES MODELS ETC ..)
+IT CAN NOT BE USED FOR ADVERTISING PURPOSES OR OTHER GAMES BY EXCLUDING MY APPROVAL IN ANY CASE IT SHOWS MY NAME> ANDREA DI PIETRO ULLA <
+WITH REGARD TO THE WRITTEN CODE, THE LICENSES ARE THOSE OF MINETEST DEFAULT
+ALSO FOR THE ADDED OR MODIFIED CODE,
+THIS LICENSE MUST BE INSERTED IN ANY PROJECT WHICH USES MOD OR PART OF IT.
+THIS MOD CAN BE IMPROVED, WITHOUT EXCLUDING MY NAME TO HAVE IDEATED AND CREATED MOD
+YOU CAN USE IT IN YOUR VIDEOS FOR MINETEST
+FOR MEDIA FILES THE LICENSE IS TYPE: MT
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+      and associated documentation files (the "Software"), to deal in the Software without restriction, 
+      including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+      and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
+      subject to the following conditions:  
+      The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+      INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+      IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+      WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+      
+      THE ARMORIES CODE DEPENDS ON THE 3D_HARMOR LICENSE :
+(3D Armor - Visible Player Armor
+===============================
+
+License Source Code: Copyright (C) 2013-2018 Stuart Jones - LGPL v2.1
+
+Armor Textures: Copyright (C) 2017-2018 davidthecreator - CC-BY-SA 3.0
+
+Special credit to Jordach and MirceaKitsune for providing the default 3d character model.)
+      
+FOR MEDIA FILES THE LICENSE IS TYPE: CC BY-NC
+Allows you to distribute, modify,
+create works derived from the original,
+  but not for commercial purposes,
+  provided that: a mention of adequate authorship is recognized,
+  provided a link to the license and indicated if changes have been made.
+Anyone who modifies the original work is not required to use the same licenses for derivative works.
