@@ -1,0 +1,65 @@
+# textdomain: cannabis
+
+
+### armor.lua ###
+
+ Boots= Stiefel
+ Chestplate= Brustpanzer
+ Helmet= Helm
+ Hemp Shield= Hanfschild
+ Leggings= Hose
+Fiber Block=Faserblock
+Fiber Ingot=Faserbarren
+High Performance Block=Hochwertiger Block
+High Performance Block Canapa=Hochwertiger Block Cannabis
+High Performance Ingot=Hochwertiger Barren
+Mixed HR Ingot=Gemischter HR Barren
+Sheet Block=Folienblock
+Sheet Ingot=Folienbarren
+Textil Block=Stoffblock
+Textil Ingot=Stoffbarren
+
+### canapa.lua ###
+
+Hemp=Hanf
+
+### init.lua ###
+
+Bread=Brot
+Fiber=Faser
+Flour=Mehl
+Fuel=Kraftstoff
+Hemp (climbing plant)=Hanf (kletternde Pflanze)
+Hemp (seedling)=Hanf (Sämling)
+Hemp (sproutling)=Hanf (Sprießend)
+Hemp Flower=Hanfblume
+Hemp Glue=Hanfkleber
+Hemp Leaves=Hanfblätter
+Hemp Oil=Hanföl
+Hemp Raisin=Hanfrosine
+Hemp Seed=Hanfsamen
+Paper=Papier
+Plastic=Plastik
+
+### tools.lua ###
+
+Hemp Bronze Axe= Hanf Bronze Axt
+Hemp Bronze Pickaxe=Hanf Bronze Spitzhacke
+Hemp Bronze Shovel=Hanf Bronze Schaufel
+Hemp Bronze Sword=Hanf Bronze Schaufel
+Hemp Diamond Axe=Hanf Diamant Axt
+Hemp Diamond Pickaxe=Hanf Diamant Spitzhacke
+Hemp Diamond Shovel=Hanf Diamant Schaufel
+Hemp Diamond Sword=Hanf Diamant Schwert
+Hemp High Performance Axe=Hanf Hochwertige Axt
+Hemp High Performance Sword=Hanf Hochwertiges Schwert
+Hemp Mese Axe=Hanf Mese Axt
+Hemp Mese Pickaxe=Hanf Mese Spitzhacke
+Hemp Mese Shovel=Hanf Mese Schaufel
+Hemp Mese Sword=Hanf Mese Schwert
+Hemp Pickaxe=Hanf Spitzhacke
+Hemp Shovel=Hanf Schaufel
+Hemp Steel Axe=Hanf Eisen Axt
+Hemp Steel Pickaxe=Hanf Eisen Spitzhacke
+Hemp Steel Shovel=Hanf Eisen Schaufel
+Hemp Steel Sword=Hanf Eisen Schwert

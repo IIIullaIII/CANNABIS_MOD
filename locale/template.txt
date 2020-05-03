@@ -1,0 +1,65 @@
+# textdomain: cannabis
+
+
+### armor.lua ###
+
+ Boots=
+ Chestplate=
+ Helmet=
+ Hemp Shield=
+ Leggings=
+Fiber Block=
+Fiber Ingot=
+High Performance Block=
+High Performance Block Canapa=
+High Performance Ingot=
+Mixed HR Ingot=
+Sheet Block=
+Sheet Ingot=
+Textil Block=
+Textil Ingot=
+
+### canapa.lua ###
+
+Hemp=
+
+### init.lua ###
+
+Bread=
+Fiber=
+Flour=
+Fuel=
+Hemp (climbing plant)=
+Hemp (seedling)=
+Hemp (sproutling)=
+Hemp Flower=
+Hemp Glue=
+Hemp Leaves=
+Hemp Oil=
+Hemp Raisin=
+Hemp Seed=
+Paper=
+Plastic=
+
+### tools.lua ###
+
+Hemp Bronze Axe=
+Hemp Bronze Pickaxe=
+Hemp Bronze Shovel=
+Hemp Bronze Sword=
+Hemp Diamond Axe=
+Hemp Diamond Pickaxe=
+Hemp Diamond Shovel=
+Hemp Diamond Sword=
+Hemp High Performance Axe=
+Hemp High Performance Sword=
+Hemp Mese Axe=
+Hemp Mese Pickaxe=
+Hemp Mese Shovel=
+Hemp Mese Sword=
+Hemp Pickaxe=
+Hemp Shovel=
+Hemp Steel Axe=
+Hemp Steel Pickaxe=
+Hemp Steel Shovel=
+Hemp Steel Sword=

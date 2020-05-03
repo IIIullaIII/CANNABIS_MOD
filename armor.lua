@@ -1,4 +1,5 @@
- 
+local S = cannabis.S
+
         --armor
         
         if minetest.get_modpath("cannabis") then
@@ -16,25 +17,25 @@
 	}
 	for k, v in pairs(stats) do
 		minetest.register_tool("cannabis:helmet_"..k, {
-			description = v.name.." Helmet",
+			description = v.name..S(" Helmet"),
 			inventory_image = "cannabis_armor_inv_helmet_"..k..".png",
 			groups = {armor_head=math.floor(5*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
 		minetest.register_tool("cannabis:chestplate_"..k, {
-			description = v.name.." Chestplate",
+			description = v.name..S(" Chestplate"),
 			inventory_image = "cannabis_armor_inv_chestplate_"..k..".png",
 			groups = {armor_torso=math.floor(8*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
 		minetest.register_tool("cannabis:leggings_"..k, {
-			description = v.name.." Leggings",
+			description = v.name..S(" Leggings"),
 			inventory_image = "cannabis_armor_inv_leggings_"..k..".png",
 			groups = {armor_legs=math.floor(7*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
 		minetest.register_tool("cannabis:boots_"..k, {
-			description = v.name.." Boots",
+			description = v.name..S(" Boots"),
 			inventory_image = "cannabis_armor_inv_boots_"..k..".png",
 			groups = {armor_feet=math.floor(4*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
@@ -77,7 +78,7 @@
             	if minetest.get_modpath("shields") then
 		for k, v in pairs(stats) do
 			minetest.register_tool("cannabis:shield_"..k, {
-				description = v.name.." hemp Shield",
+				description = v.name..S(" Hemp Shield"),
 				inventory_image = "cannabis_armor_inv_shield_"..k..".png",
 				groups = {armor_shield=math.floor(5*v.armor), armor_heal=v.heal, armor_use=v.use},
 				wear = 0,
@@ -96,24 +97,24 @@
 end
 
 minetest.register_craftitem("cannabis:mixed_hr_ingot", {
-	description = ("Mixed HR Ingot"),
+	description = S("Mixed HR Ingot"),
 	inventory_image = "cannabis_mixed_hr_ingot.png",
 })
 
 minetest.register_craftitem(":cannabis:fibra_ingot", {
-	description = ("fibra Ingot"),
+	description = S("Fiber Ingot"),
 	inventory_image = "cannabis_fibra_ingot.png",
 })
 minetest.register_craftitem(":cannabis:foglie_ingot", {
-	description = ("foglie Ingot"),
+	description = S("Sheet Ingot"),
 	inventory_image = "cannabis_foglie_ingot.png",
 })
 minetest.register_craftitem("cannabis:high_performance_ingot", {
-	description = ("High Performance Ingot"),
+	description = S("High Performance Ingot"),
 	inventory_image = "cannabis_high_performance_ingot.png",
 })
 minetest.register_craftitem(":cannabis:tessuto_ingot", {
-	description = ("Tessuto Ingot"),
+	description = S("Textil Ingot"),
 	inventory_image = "cannabis_tessuto_ingot.png",
 })
 local function for_each_registered_item(action)
@@ -165,7 +166,7 @@ register_block("cannabis:cannabis_tessuto_block", "cannabis:tessuto_ingot")
 register_block("cannabis:cannabis_foglie_block", "cannabis:foglie_ingot")
 
 minetest.register_node("cannabis:cannabis_foglie_block", {
-	description = ("Foglie Block"),
+	description = S("Sheet Block"),
 	tiles = { "cannabis_foglie_block.png" },
 	is_ground_content = true,
 	groups = {cracky=1, level=2},
@@ -173,7 +174,7 @@ minetest.register_node("cannabis:cannabis_foglie_block", {
 })
 
 minetest.register_node("cannabis:cannabis_tessuto_block", {
-	description = ("Tessuto Block"),
+	description = S("Textil Block"),
 	tiles = { "cannabis_tessuto_block.png" },
 	is_ground_content = true,
 	groups = {cracky=1, level=2},
@@ -184,7 +185,7 @@ minetest.register_node("cannabis:cannabis_tessuto_block", {
 
 minetest.register_node("cannabis:hp_block_canapa", 
     {
-	description = "hp_block_canapa",
+	description = S("High Performance Block Canapa"),
 	tiles = {"hp_block_canapa.png"},
 	is_ground_content = false,
 	groups = {choppy = 30, oddly_breakable_by_hand = 1, flammable = 3, wood = 1},
@@ -193,14 +194,14 @@ minetest.register_node("cannabis:hp_block_canapa",
 
 
 minetest.register_node("cannabis:cannabis_high_performance_block", {
-	description = ("High Performance Block"),
+	description = S("High Performance Block"),
 	tiles = { "cannabis_high_performance_block.png" },
 	is_ground_content = true,
 	groups = {cracky=1, level=2},
 	sounds = "cannabis_canapa_s3"
 })
 minetest.register_node("cannabis:cannabis_fibra_block", {
-	description = ("Fibra Block"),
+	description = S("Fiber Block"),
 	tiles = { "cannabis_fibra_block.png" },
 	is_ground_content = true,
 	groups = {cracky=1, level=2},
