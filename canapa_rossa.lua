@@ -1,5 +1,9 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
+local path = cannabis.path
+
 minetest.register_node("cannabis:canapa_red", {
-	description = "Canapa",
+	description = S("Hemp red"),
 	drawtype = "plantlike",
 	tiles = {"cannabis_canapa_red.png"},
 	inventory_image = "cannabis_canapa_red.png",
@@ -120,12 +124,12 @@ minetest.register_biome({
 		biomes = {"canapa_swampr"},
 		y_min = 0,
 		y_max = 31000,
-		schematic = "canapa.mts",
+		schematic = path .. "/schematics/canapa.mts",
 	})
 
 
 minetest.register_node('cannabis:seedling_r', {
-	description = ("hemp red(seedling)"),
+	description = S("Hemp red(seedling)"),
 	drawtype = 'plantlike',
 	waving = 1,
 	tiles = { '1hemp_seedling_red.png' },
@@ -140,7 +144,7 @@ minetest.register_node('cannabis:seedling_r', {
 })
 
 minetest.register_node('cannabis:sproutling_r', {
-	description = ("hemp red (sproutling)"),
+	description = S("Hemp red (sproutling)"),
 	drawtype = 'plantlike',
 	waving = 1,
 	tiles = { 'hemp_sproutling_red.png' },
@@ -155,7 +159,7 @@ minetest.register_node('cannabis:sproutling_r', {
 })
 
 minetest.register_node('cannabis:climbing_r', {
-	description = ("hemp red (climbing plant)"),
+	description = S("Hemp red (climbing plant)"),
 	drawtype = 'signlike',
 	tiles = { 'hemp_climbing_red.png' },
 	inventory_image = 'hemp_climbing_red.png',

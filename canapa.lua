@@ -1,5 +1,9 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
+local path = cannabis.path
+
 minetest.register_node("cannabis:canapa", {
-	description = "Canapa",
+	description = S("Hemp"),
 	drawtype = "plantlike",
 	tiles = {"cannabis_canapa.png"},
 	inventory_image = "cannabis_canapa.png",
@@ -120,14 +124,14 @@ minetest.register_biome({
 		biomes = {"canapa_swamp"},
 		y_min = 0,
 		y_max = 0,
-		schematic = "canapa.mts",--minetest.get_modpath("cannabis").."/schematics/canapa.mts",
+		schematic = path .. "/schematics/canapa.mts",--minetest.get_modpath("cannabis").."/schematics/canapa.mts",
 	})
 
 -- This file supplies hemp for the plantlife modpack
 -- Last revision:  2016-01-14
 
 minetest.register_node('cannabis:seedling', {
-	description = ("hemp (seedling)"),
+	description = S("Hemp (seedling)"),
 	drawtype = 'plantlike',
 	waving = 1,
 	tiles = { '1hemp_seedling.png' },
@@ -142,7 +146,7 @@ minetest.register_node('cannabis:seedling', {
 })
 
 minetest.register_node('cannabis:sproutling', {
-	description = ("hemp (sproutling)"),
+	description = S("Hemp (sproutling)"),
 	drawtype = 'plantlike',
 	waving = 1,
 	tiles = { 'hemp_sproutling.png' },
@@ -157,7 +161,7 @@ minetest.register_node('cannabis:sproutling', {
 })
 
 minetest.register_node('cannabis:climbing', {
-	description = ("hemp (climbing plant)"),
+	description = S("Hemp (climbing plant)"),
 	drawtype = 'signlike',
 	tiles = { 'hemp_climbing.png' },
 	inventory_image = 'hemp_climbing.png',

@@ -1,6 +1,8 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
 
 	minetest.register_craftitem("cannabis:joint_fumo_acceso", {
-	description = "Joint fumo acceso",
+	description = S("Joint fumo acceso"),
 	inventory_image = "joint_joint_fac.png",
 	stack_max = 1 ,
 	on_use = function(itemstack, user, pointed_thing)
@@ -10,52 +12,52 @@
     
 	})
 	minetest.register_craftitem("cannabis:joint_erba_spento", {
-	description = "Joint erba spento",
+	description = S("Joint erba spento"),
 	inventory_image = "joint_joint_csp.png",
    	
 	})
 	minetest.register_craftitem("cannabis:joint_fumo_spento", {
-	description = "Joint fumo spento",
+	description = S("Joint fumo spento"),
 	inventory_image = "joint_joint_fsp.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cima", {
-	description = "Joint cima triturata",
+	description = S("Joint cima triturata"),
 	inventory_image = "joint_cima_s.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_fumo", {
-	description = "Joint fumo triturato",
+	description = S("Joint fumo triturato"),
 	inventory_image = "joint_fumo_s.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cartina", {
-	description = "Joint cartina",
+	description = S("Joint cartina"),
 	inventory_image = "joint_cartina.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cartina_cima", {
-	description = "Joint cartina con erba",
+	description = S("Joint cartina con erba"),
 	inventory_image = "joint_cartina_cima.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cartina_fumo", {
-	description = "Joint cartina con fumo",
+	description = S("Joint cartina con fumo"),
 	inventory_image = "joint_cartina_fumo.png",
     
 	})
     minetest.register_craftitem("cannabis:joint_filter_box", {
-	description = "Joint filter confezione",
+	description = S("Joint filter confezione"),
 	inventory_image = "joint_filter_p.png",
     
 	})
 	 minetest.register_craftitem("cannabis:joint_filter", {
-	description = "Joint filto",
+	description = S("Joint filto"),
 	inventory_image = "joint_filter.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_accendino", {
-	description = "Joint accendino",
+	description = S("Joint accendino"),
 	inventory_image = "joint_accendino.png",
     
 	})
@@ -167,7 +169,7 @@ minetest.register_craft({
 --for color, smokecolor in pairs(smokeCOLOR) do
     -- water
     minetest.register_craftitem("cannabis:joint_erba_acceso", {
-	description = "Joint erba acceso",
+	description = S("Joint erba acceso"),
 	inventory_image = "joint_joint_cac.png",
     stack_max = 1 ,
    -- post_effect_color = smokeCOLOR,

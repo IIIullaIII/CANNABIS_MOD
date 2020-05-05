@@ -1,18 +1,20 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
 
 minetest.register_craftitem("cannabis:canapa_red_seed", {
-	description = "Hemp_Seed",
+	description = S("Hemp Seed"),
 	inventory_image = "cannabis_canapa_red_seed.png",
 	on_use = minetest.item_eat(10),
 })
 
 minetest.register_craftitem("cannabis:canapa_red_leaves", {
-	description = "Hemp_Leaves",
+	description = S("Hemp Leaves"),
 	inventory_image = "cannabis_canapa_red_leaves.png",
 	on_use = minetest.item_eat(5),
 })
 
 minetest.register_craftitem("cannabis:canapa_red_flower", {
-	description = "Hemp_red_Flower",
+	description = S("Hemp red Flower"),
 	inventory_image = "cannabis_canapa_red_flower.png",
 	on_use = minetest.item_eat(5),
 })
