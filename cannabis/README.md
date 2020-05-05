@@ -14,7 +14,7 @@ it also aims to dispel the lies that have so far been said about it
 and let people know how it can be useful to clean the air and the soil from pollution this mod will not only illustrate the recreational side
 as they have shown us so far, that is, in a distorted way.
 This is the reason why I created this mod to eradicate the ignorance and misinformation about hemp in an educational way,
-completing all the twists of the mod requires a bit of work for this and is still in the processing and expansion phase
+the consideration of all aspects of the mod requires a bit of work for this and is still in the processing and expansion phase
 
 DE)
 
