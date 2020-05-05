@@ -24,7 +24,7 @@ es zielt auch darauf ab, die Lügen zu zerstreuen, die bisher darüber gesagt wu
 und lassen Sie die Leute wissen, wie nützlich es sein kann, die Luft und den Boden von Verschmutzung zu reinigen. Dieser Mod wird nicht nur die Erholungsseite veranschaulichen
 wie sie uns bisher gezeigt haben, also verzerrt.
 Dies ist der Grund, warum ich diesen Mod erstellt habe, um die Unwissenheit und Fehlinformation über Hanf auf pädagogische Weise zu beseitigen.
-Das Abschließen aller Drehungen des Mods erfordert ein wenig Arbeit und befindet sich noch in der Verarbeitungs- und Erweiterungsphase
+Das Berücksichtigen aller Aspekte des Mods erfordert ein wenig Arbeit und befindet sich noch in der Verarbeitungs- und Erweiterungsphase
 
 ES)
 Este mod tiene como objetivo ilustrar las vastas posibilidades y sectores de uso del cáñamo, su importancia en los diversos sectores médicos, culinarios, industriales, bioenergéticos, recreativos, etc.
