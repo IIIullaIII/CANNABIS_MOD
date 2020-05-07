@@ -14,7 +14,7 @@ it also aims to dispel the lies that have so far been said about it
 and let people know how it can be useful to clean the air and the soil from pollution this mod will not only illustrate the recreational side
 as they have shown us so far, that is, in a distorted way.
 This is the reason why I created this mod to eradicate the ignorance and misinformation about hemp in an educational way,
-completing all the twists of the mod requires a bit of work for this and is still in the processing and expansion phase
+the consideration of all aspects of the mod requires a bit of work for this and is still in the processing and expansion phase
 
 DE)
 
@@ -24,7 +24,7 @@ es zielt auch darauf ab, die Lügen zu zerstreuen, die bisher darüber gesagt wu
 und lassen Sie die Leute wissen, wie nützlich es sein kann, die Luft und den Boden von Verschmutzung zu reinigen. Dieser Mod wird nicht nur die Erholungsseite veranschaulichen
 wie sie uns bisher gezeigt haben, also verzerrt.
 Dies ist der Grund, warum ich diesen Mod erstellt habe, um die Unwissenheit und Fehlinformation über Hanf auf pädagogische Weise zu beseitigen.
-Das Abschließen aller Drehungen des Mods erfordert ein wenig Arbeit und befindet sich noch in der Verarbeitungs- und Erweiterungsphase
+Das Berücksichtigen aller Aspekte des Mods erfordert ein wenig Arbeit und befindet sich noch in der Entwicklungs- und Erweiterungsphase
 
 ES)
 Este mod tiene como objetivo ilustrar las vastas posibilidades y sectores de uso del cáñamo, su importancia en los diversos sectores médicos, culinarios, industriales, bioenergéticos, recreativos, etc.
