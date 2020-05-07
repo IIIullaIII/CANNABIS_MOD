@@ -1,5 +1,9 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
+local path = cannabis.path
+
 minetest.register_node("cannabis:canapa_red", {
-	description = "Canapa",
+	description = S("Hemp red"),
 	drawtype = "plantlike",
 	tiles = {"cannabis_canapa_red.png"},
 	inventory_image = "cannabis_canapa_red.png",
@@ -18,19 +22,25 @@ minetest.register_node("cannabis:canapa_red", {
    items = {
       {items = {"cannabis:canapa_red"}, rarity = 1 },
       {items = {"cannabis:canapa_red_leaves"}, rarity = 1 },
-      {items = {"cannabis:canapa_red_seed"}, rarity = 1 },
+      --{items = {"cannabis:canapa_red_seed"}, rarity = 1 },
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
 		default.dig_up(pos, node, digger)
 	end,
 })
+--____________________________________
+
+--___________________________________
 --function
+
 
 function minetest.grow_canapa_red(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
-	if name ~= "default:desert_sand" and name ~= "default:sand" then
+	if name ~= "default:sand" and name ~= "default:desert_sand" 
+	                          and name ~= "default:silver_sand"
+	                          and name ~= "default:dry_dirt_with_dry_grass" then
 		return
 	end
 	if not minetest.find_node_near(pos, 5, {"group:water"}) then
@@ -43,19 +53,26 @@ function minetest.grow_canapa_red(pos, node)
 		pos.y = pos.y + 1
 		node = minetest.get_node(pos)
 	end
-	if height == 5 or node.name ~= "air" then
+			if height==6 then
+	minetest.set_node(pos, {name = "cannabis:flowering_red"})
+		else
+	if height == 6 or node.name ~= "air" then
 		return
 	end
 	minetest.set_node(pos, {name = "cannabis:canapa_red"})
 	return true
 end
+end
 --mapgen
 minetest.register_abm({
     label = "Grow canapa red",
 	nodenames = {"cannabis:canapa_red"},
-	neighbors ={"default:desert_sand","default:sand"},
-	interval = 5,
-	chance = 40,
+	neighbors ={"default:sand",
+	            "default:desert_sand",
+	            "default:silver_sand",
+	            "default:dry_dirt_with_dry_grass"},
+	interval = 2,
+	chance = 10,
 	action = function(...)
 		minetest.grow_canapa_red(...)
 	end
@@ -120,12 +137,12 @@ minetest.register_biome({
 		biomes = {"canapa_swampr"},
 		y_min = 0,
 		y_max = 31000,
-		schematic = "canapa.mts",
+		schematic = path .. "/schematics/canapa.mts",
 	})
 
 
 minetest.register_node('cannabis:seedling_r', {
-	description = ("hemp red(seedling)"),
+	description = S("Hemp red(seedling)"),
 	drawtype = 'plantlike',
 	waving = 1,
 	tiles = { '1hemp_seedling_red.png' },
@@ -140,7 +157,7 @@ minetest.register_node('cannabis:seedling_r', {
 })
 
 minetest.register_node('cannabis:sproutling_r', {
-	description = ("hemp red (sproutling)"),
+	description = S("Hemp red (sproutling)"),
 	drawtype = 'plantlike',
 	waving = 1,
 	tiles = { 'hemp_sproutling_red.png' },
@@ -155,7 +172,7 @@ minetest.register_node('cannabis:sproutling_r', {
 })
 
 minetest.register_node('cannabis:climbing_r', {
-	description = ("hemp red (climbing plant)"),
+	description = S("Hemp red (climbing plant)"),
 	drawtype = 'signlike',
 	tiles = { 'hemp_climbing_red.png' },
 	inventory_image = 'hemp_climbing_red.png',
@@ -171,4 +188,24 @@ minetest.register_node('cannabis:climbing_r', {
 		--wall_side = = <default>
 	},
 	buildable_to = true,
+})
+minetest.register_node('cannabis:flowering_red', {
+	description = S("Hemp (Red flowering)"),
+	drawtype = 'plantlike',
+	waving = 1,
+	tiles = { 'cannabis_canapa_red_flower.png' },
+	inventory_image = 'cannabis_canapa_red_flower.png',
+	wield_image = 'cannabis_canapa_red_flower.png',
+	sunlight_propagates = true,
+	paramtype = 'light',
+	walkable = false,
+	groups = { snappy = 3, poisonivy=1, flora_block=1 },
+	sounds = "cannabis_canapa_s3",
+	buildable_to = true,
+	  drop = {
+   max_items = 3,
+   items = {
+      {items = {"cannabis:canapa_flower"}, rarity = 1 },
+      {items = {"cannabis:canapa_red_seed"}, rarity = 1 },
+   }}
 })

@@ -1,67 +1,69 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
 
---craft item :fiber, fuel, plastic, paper,flower,oil,flour,bred,raisin,seed,leaves
+--craft item :fiber, fuel, plastic, paper,flower,oil,flour,bred,resin,seed,leaves
 
 minetest.register_craftitem("cannabis:canapa_fiber", {
-	description = "Fiber",
+	description = S("Fiber"),
 	inventory_image = "cannabis_canapa_fiber.png",
 })
 minetest.register_craftitem("cannabis:canapa_fuel", {
-	description = "Fuel",
+	description = S("BioFuel"),
 	inventory_image = "cannabis_fuel.png",
 })
 
 minetest.register_craftitem("cannabis:canapa_plastic", {
-	description = "Plastic",
+	description = S("Plastic"),
 	inventory_image = "cannabis_plastic.png",
 })
 
 minetest.register_craftitem("cannabis:canapa_paper", {
-	description = "Paper",
+	description = S("Paper"),
 	inventory_image = "cannabis_paper.png",
 })
 minetest.register_craftitem("cannabis:canapa_flour", {
-	description = "Flour",
+	description = S("Flour"),
 	inventory_image = "cannabis_canapa_flour.png",
 })
 
 minetest.register_craftitem("cannabis:canapa_bread", {
-	description = "Bread",
+	description = S("Bread"),
 	inventory_image = "cannabis_canapa_bread.png",
 	on_use = minetest.item_eat(10),
 })
 
 minetest.register_craftitem("cannabis:canapa_seed", {
-	description = "Hemp_Seed",
+	description = S("Hemp Seed"),
 	inventory_image = "cannabis_canapa_seed.png",
 	on_use = minetest.item_eat(10),
 })
 
 minetest.register_craftitem("cannabis:canapa_leaves", {
-	description = "Hemp_Leaves",
+	description = S("Hemp Leaves"),
 	inventory_image = "cannabis_canapa_leaves.png",
 	on_use = minetest.item_eat(5),
 })
 
 minetest.register_craftitem("cannabis:canapa_flower", {
-	description = "Hemp_Flower",
+	description = S("Hemp Flower"),
 	inventory_image = "cannabis_canapa_flower.png",
 	on_use = minetest.item_eat(5),
 })
 
 minetest.register_craftitem("cannabis:canapa_raisin", {
-	description = "Hemp_Raisin",
+	description = S("Hemp Resin"),
 	inventory_image = "cannabis_canapa_raisin.png",
 	on_use = minetest.item_eat(5),
 })
 
 minetest.register_craftitem("cannabis:canapa_oil", {
-	description = "Hemp_Oil",
+	description = S("Hemp Oil"),
 	inventory_image = "cannabis_canapa_oil.png",
 	on_use = minetest.item_eat(5),
 })
 
 minetest.register_craftitem("cannabis:canapa_glue", {
-	description = "Hemp_Glue",
+	description = S("Hemp Glue"),
 	inventory_image = "cannabis_canapa_glue.png",
 	on_use = minetest.item_eat(1),
 })
@@ -131,14 +133,7 @@ minetest.register_craft({
 })
         
 
-minetest.register_craft({
-	output = "cannabis:canapa_flower 5 ",
-	recipe = {
-		{"","",""},
-                {"","",""},
-                {"cannabis:canapa_leaves","cannabis:canapa_leaves",""},
-	}
-})
+
 
 
 minetest.register_craft({
