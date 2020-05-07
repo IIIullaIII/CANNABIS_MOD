@@ -1,6 +1,8 @@
-
+-- get Boilerplate for Translations
+local S = cannabis.S
+local path = cannabis.path
 	minetest.register_craftitem("cannabis:joint_fumo_acceso", {
-	description = "Joint fumo acceso",
+	description = S("Joint of hash lit"),
 	inventory_image = "joint_joint_fac.png",
 	stack_max = 1 ,
 	on_use = function(itemstack, user, pointed_thing)
@@ -9,53 +11,66 @@
 		end
     
 	})
+	   minetest.register_craftitem("cannabis:joint_erba_acceso", {
+	description = S("Joint of weed lit"),
+	inventory_image = "joint_joint_cac.png",
+    stack_max = 1 ,
+   -- post_effect_color = smokeCOLOR,
+    on_use = function(itemstack, user, pointed_thing)
+            
+		     itemstack:add_wear(1000)     
+		return itemstack 
+	
+	           
+	            end
+    })
 	minetest.register_craftitem("cannabis:joint_erba_spento", {
-	description = "Joint erba spento",
+	description = S("Joint of weed unlit"),
 	inventory_image = "joint_joint_csp.png",
    	
 	})
 	minetest.register_craftitem("cannabis:joint_fumo_spento", {
-	description = "Joint fumo spento",
+	description = S("Joint of hash unlit"),
 	inventory_image = "joint_joint_fsp.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cima", {
-	description = "Joint cima triturata",
+	description = S("Flowering chopped"),
 	inventory_image = "joint_cima_s.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_fumo", {
-	description = "Joint fumo triturato",
+	description = S("Hash melted"),
 	inventory_image = "joint_fumo_s.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cartina", {
-	description = "Joint cartina",
+	description = S("Rolling paper"),
 	inventory_image = "joint_cartina.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cartina_cima", {
-	description = "Joint cartina con erba",
+	description = S("Rolling paper with hemp leaves and flowering chopped "),
 	inventory_image = "joint_cartina_cima.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_cartina_fumo", {
-	description = "Joint cartina con fumo",
+	description = S("Rolling paper with hemp leaves melted hash"),
 	inventory_image = "joint_cartina_fumo.png",
     
 	})
     minetest.register_craftitem("cannabis:joint_filter_box", {
-	description = "Joint filter confezione",
+	description = S("Filters pack"),
 	inventory_image = "joint_filter_p.png",
     
 	})
 	 minetest.register_craftitem("cannabis:joint_filter", {
-	description = "Joint filto",
+	description = S("Filter"),
 	inventory_image = "joint_filter.png",
     
 	})
 	minetest.register_craftitem("cannabis:joint_accendino", {
-	description = "Joint accendino",
+	description = S("Lighter"),
 	inventory_image = "joint_accendino.png",
     
 	})
@@ -166,18 +181,6 @@ minetest.register_craft({
 -- underwatercolor will be the value (one of the tables above)
 --for color, smokecolor in pairs(smokeCOLOR) do
     -- water
-    minetest.register_craftitem("cannabis:joint_erba_acceso", {
-	description = "Joint erba acceso",
-	inventory_image = "joint_joint_cac.png",
-    stack_max = 1 ,
-   -- post_effect_color = smokeCOLOR,
-    on_use = function(itemstack, user, pointed_thing)
-            
-		     itemstack:add_wear(1000)     
-		return itemstack 
-	
-	           
-	            end
-    })
+ 
 
 --end

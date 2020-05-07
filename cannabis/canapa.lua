@@ -76,7 +76,7 @@ minetest.register_abm({
 	            "default:dirt_with_coniferous_litter"  
 	},
 	interval = 2,
-	chance = 10,
+	chance = 1,
 	action = function(...)
 		minetest.grow_canapa(...)
 	end

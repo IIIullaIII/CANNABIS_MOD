@@ -1,27 +1,29 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
 
 minetest.register_craftitem("cannabis:mixed_hr_ingot", {
-	description = ("Mixed HR Ingot"),
+	description = S("Mixed HR Ingot"),
 	inventory_image = "cannabis_mixed_hr_ingot.png",
 })
 
 minetest.register_craftitem(":cannabis:fibra_ingot", {
-	description = ("fibra Ingot"),
+	description = S("Fiber Ingot"),
 	inventory_image = "cannabis_fibra_ingot.png",
 })
 minetest.register_craftitem(":cannabis:foglie_ingot", {
-	description = ("foglie Ingot"),
+	description = S("Leaves Ingot"),
 	inventory_image = "cannabis_foglie_ingot.png",
 })
 minetest.register_craftitem("cannabis:high_performance_ingot", {
-	description = ("High Performance Ingot"),
+	description = S("High Performance Ingot"),
 	inventory_image = "cannabis_high_performance_ingot.png",
 })
 minetest.register_craftitem(":cannabis:tessuto_ingot", {
-	description = ("Tessuto Ingot"),
+	description = S("Fabric Ingot"),
 	inventory_image = "cannabis_tessuto_ingot.png",
 })
 minetest.register_craftitem(":cannabis:adminh_ingot", {
-	description = ("Adminh Ingot"),
+	description = S("Adminh Ingot"),
 	inventory_image = "cannabis_adminh_ingot.png",
 })
 local function for_each_registered_item(action)
@@ -75,7 +77,7 @@ register_block("cannabis:cannabis_adminh_block", "cannabis:adminh_ingot")
 
 minetest.register_node("cannabis:hp_block_canapa", 
     {
-	description = "hp_block_canapa",
+	description = S("High Performance Block Hemp"),
 	tiles = {"hp_block_canapa.png"},
 	is_ground_content = false,
 	groups = {choppy = 30, oddly_breakable_by_hand = 1, flammable = 3, wood = 1},
@@ -83,21 +85,21 @@ minetest.register_node("cannabis:hp_block_canapa",
 })
 
 minetest.register_node("cannabis:cannabis_foglie_block", {
-	description = ("Foglie Block"),
+	description = S("Leaves Block"),
 	tiles = { "cannabis_foglie_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
 	sounds = "cannabis:cannabis_canapa_s3"
 })
 minetest.register_node("cannabis:cannabis_foglie_red_block", {
-	description = ("Foglie Block"),
+	description = S("Red Leaves Block"),
 	tiles = { "cannabis_foglie_red_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
 	sounds = "cannabis:cannabis_canapa_s3"
 })
 minetest.register_node("cannabis:cannabis_tessuto_block", {
-	description = ("Tessuto Block"),
+	description = S("Fabric Block"),
 	tiles = { "cannabis_tessuto_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
@@ -106,21 +108,21 @@ minetest.register_node("cannabis:cannabis_tessuto_block", {
 
 
 minetest.register_node("cannabis:cannabis_high_performance_block", {
-	description = ("High Performance Block"),
+	description = S("High Performance Block"),
 	tiles = { "cannabis_high_performance_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
 	sounds = "cannabis_canapa_s3"
 })
 minetest.register_node("cannabis:cannabis_fibra_block", {
-	description = ("Fibra Block"),
+	description = S("Fiber Block"),
 	tiles = { "cannabis_fibra_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
 	sounds = "cannabis_canapa_s3"
 })
 minetest.register_node("cannabis:cannabis_adminh_block", {
-	description = ("Adminh Block"),
+	description = S("Adminh Block"),
 	tiles = { "cannabis_adminh_block.png" },
 	is_ground_content = false,
 	groups = {unbreackable =1},

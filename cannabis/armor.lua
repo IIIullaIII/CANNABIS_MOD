@@ -1,6 +1,9 @@
+-- get Boilerplate for Translations
+local S = cannabis.S
+
       --armor
         
-        if minetest.get_modpath("cannabis") then
+if minetest.get_modpath("cannabis") then
 	local stats = {
 		fibra = { name="fibra", armor=3.8, heal=28, use=100 },
         tessuto= { name="tessuto", armor=2.0, heal=18, use=50 },
@@ -18,25 +21,25 @@
 	}
 	for k, v in pairs(stats) do
 		minetest.register_tool("cannabis:helmet_"..k, {
-			description = v.name.." Helmet",
+			description = v.name..S(" Helmet"),
 			inventory_image = "cannabis_armor_inv_helmet_"..k..".png",
 			groups = {armor_head=math.floor(5*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
 		minetest.register_tool("cannabis:chestplate_"..k, {
-			description = v.name.." Chestplate",
+			description = v.name.. S(" Chestplate"),
 			inventory_image = "cannabis_armor_inv_chestplate_"..k..".png",
 			groups = {armor_torso=math.floor(8*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
 		minetest.register_tool("cannabis:leggings_"..k, {
-			description = v.name.." Leggings",
+			description = v.name.. S(" Leggings"),
 			inventory_image = "cannabis_armor_inv_leggings_"..k..".png",
 			groups = {armor_legs=math.floor(7*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
 		})
 		minetest.register_tool("cannabis:boots_"..k, {
-			description = v.name.." Boots",
+			description = v.name..S(" Boots"),
 			inventory_image = "cannabis_armor_inv_boots_"..k..".png",
 			groups = {armor_feet=math.floor(4*v.armor), armor_heal=v.heal, armor_use=v.use},
 			wear = 0,
@@ -76,10 +79,11 @@
 			},
 		})
 	end
-            	if minetest.get_modpath("shields") then
+    
+    if minetest.get_modpath("shields") then
 		for k, v in pairs(stats) do
 			minetest.register_tool("cannabis:shield_"..k, {
-				description = v.name.." hemp Shield",
+				description = v.name.. S(" Hemp Shield"),
 				inventory_image = "cannabis_armor_inv_shield_"..k..".png",
 				groups = {armor_shield=math.floor(5*v.armor), armor_heal=v.heal, armor_use=v.use},
 				wear = 0,
@@ -93,6 +97,6 @@
 					{"", m, ""},
 				},
 			})
-		end
-	end
-end
+		end -- for k,v
+	end -- if minetest.get_modpath("shields")
+end--if minetest.get_modpath("cannabis")

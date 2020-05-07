@@ -1,3 +1,8 @@
+--aliases
+--minetest.get_modpath("cannabis")
+minetest.register_alias("canapa","cannabis:canapa")
+
+--tools
 cannabis = {}       -- A global Object for the mod
 cannabis.path = minetest.get_modpath("cannabis") -- The path of the mod
 local path = cannabis.path
@@ -12,11 +17,8 @@ else
 
 end
 
-cannabis.S = S 
-minetest.register_alias("canapa","cannabis:canapa")
+cannabis.S = S  -- Stores the boilerplate for global access
 
---tools
-local path = minetest.get_modpath("cannabis")
 dofile(path.."/tools.lua")
 dofile(path.."/canapa.lua")
 dofile(path.."/node_ingot.lua")
