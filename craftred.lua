@@ -83,15 +83,6 @@ minetest.register_craft({
 	}
 }) 
 
-minetest.register_craft({
-	output = "cannabis:canapa_red_flower 5 ",
-	recipe = {
-		{"","",""},
-                {"","",""},
-                {"cannabis:canapa_red_leaves","cannabis:canapa_red_leaves",""},
-	}
-})
-
 
 minetest.register_craft({
 	output = "cannabis:canapa_red_seed 10 ",

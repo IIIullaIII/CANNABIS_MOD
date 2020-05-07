@@ -13,11 +13,13 @@
 
 Hemp=
 Hemp (climbing plant)=
+Hemp (flowering)=
 Hemp (seedling)=
 Hemp (sproutling)=
 
 ### canapa_rossa.lua ###
 
+Hemp (Red flowering)=
 Hemp red=
 Hemp red (climbing plant)=
 Hemp red (sproutling)=
@@ -25,14 +27,14 @@ Hemp red(seedling)=
 
 ### craftitem.lua ###
 
+BioFuel=
 Bread=
 Fiber=
 Flour=
-Fuel=
 Hemp Flower=
 Hemp Glue=
 Hemp Oil=
-Hemp Raisin=
+Hemp Resin=
 Paper=
 Plastic=
 
@@ -48,18 +50,18 @@ Hemp red Flower=
 
 ### joint.lua ###
 
-Joint accendino=
-Joint cartina=
-Joint cartina con erba=
-Joint cartina con fumo=
-Joint cima triturata=
-Joint erba acceso=
-Joint erba spento=
-Joint filter confezione=
-Joint filto=
-Joint fumo acceso=
-Joint fumo spento=
-Joint fumo triturato=
+Filter=
+Filters pack=
+Flowering chopped=
+Hash melted=
+Joint of hash lit=
+Joint of hash unlit=
+Joint of weed lit=
+Joint of weed unlit=
+Lighter=
+Rolling paper=
+Rolling paper with hemp leaves and flowering chopped =
+Rolling paper with hemp leaves melted hash=
 
 ### node_ingot.lua ###
 

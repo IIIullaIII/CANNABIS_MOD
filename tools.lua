@@ -167,23 +167,7 @@ minetest.register_tool("cannabis:shovel_hemp_diamond", {
 	},
 })
 
- --[[minetest.register_item(":", {
-	type = "none",
-	wield_image = "wieldhand.png",
-	wield_scale = {x=1,y=1,z=2.5},
-	tool_capabilities = {
-		full_punch_interval = 0.9,
-		max_drop_level = 0,
-		groupcaps = {
-			crumbly = {times={[2]=3.00, [3]=0.70}, uses=0, maxlevel=1},
-			snappy = {times={[3]=0.40}, uses=0, maxlevel=1},
-			oddly_breakable_by_hand = {times={[1]=3.50,[2]=2.00,[3]=0.70}, uses=0}
-		},
-		damage_groups = {fleshy=1},
-	}
-})
 
-]]--
 -- Axes____________________________________________________________________________________________________
 --
 minetest.register_tool("cannabis:axe_hemp_steel", {
@@ -309,49 +293,6 @@ minetest.register_tool("cannabis:sword_hemp_high", {
 		damage_groups = {fleshy=9},
 	}
 })
-
-
----
---minetest.register_tool("cannabis:sword_hemp_adminh", {
-	--description = "Hemp_adminh Sword",
-	--inventory_image = "cannabis_tool_adminhsword.png",
-	--tool_capabilities = {
-		--full_punch_interval = 0.5,
-		--max_drop_level=1,
-		--groupcaps={
-			--unbreakable = {times={[1] = 0.1, [2] = 0.1, [3] = 0.1}, uses = 0, maxlevel = 30},
-			--snappy={times={[1]=0.1, [2]=0.1, [3]=0.1}, uses=99, maxlevel=30},
-		--},
-		--damage_groups = {fleshy=100000},
-	--}
---})
---CRAFT RECIPE
-minetest.register_tool("cannabis:pick_hemp_adminh", {
-	description = S("Hemp Admin High Performance Sword"),
-	inventory_image = "cannabis_tool_adminhsword.png",
-	tool_capabilities = {
-		full_punch_interval = 0.35,
-		max_drop_level=3,
-			groupcaps= {
-			unbreakable = {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			fleshy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			choppy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			--bendy =       {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			--cracky =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			--crumbly =     {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-			snappy =      {times={[1] = 0, [2] = 0, [3] = 0}, uses = 0, maxlevel = 3},
-		},
-		damage_groups = {fleshy=10000},
-	},
-})
-minetest.register_on_punchnode(function(pos, node, puncher)
-	if puncher:get_wielded_item():get_name() == "cannabis:sword_hemp_adminh"
-	and minetest.get_node(pos).name ~= "air" then
-		minetest.log("action", puncher:get_player_name() .. " digs " .. minetest.get_node(pos).name .. " at " .. minetest.pos_to_string(pos) .. " using an Admin Pickaxe.")
-		minetest.remove_node(pos) -- The node is removed directly, which means it even works on non-empty containers and group-less nodes.
-		minetest.check_for_falling(pos) -- Run node update actions like falling nodes.
-	end
-end)
 
 
 --pick:___________________________________________________________________

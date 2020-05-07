@@ -1,14 +1,14 @@
 -- get Boilerplate for Translations
 local S = cannabis.S
 
---craft item :fiber, fuel, plastic, paper,flower,oil,flour,bred,raisin,seed,leaves
+--craft item :fiber, fuel, plastic, paper,flower,oil,flour,bred,resin,seed,leaves
 
 minetest.register_craftitem("cannabis:canapa_fiber", {
 	description = S("Fiber"),
 	inventory_image = "cannabis_canapa_fiber.png",
 })
 minetest.register_craftitem("cannabis:canapa_fuel", {
-	description = S("Fuel"),
+	description = S("BioFuel"),
 	inventory_image = "cannabis_fuel.png",
 })
 
@@ -51,7 +51,7 @@ minetest.register_craftitem("cannabis:canapa_flower", {
 })
 
 minetest.register_craftitem("cannabis:canapa_raisin", {
-	description = S("Hemp Raisin"),
+	description = S("Hemp Resin"),
 	inventory_image = "cannabis_canapa_raisin.png",
 	on_use = minetest.item_eat(5),
 })
@@ -133,14 +133,7 @@ minetest.register_craft({
 })
         
 
-minetest.register_craft({
-	output = "cannabis:canapa_flower 5 ",
-	recipe = {
-		{"","",""},
-                {"","",""},
-                {"cannabis:canapa_leaves","cannabis:canapa_leaves",""},
-	}
-})
+
 
 
 minetest.register_craft({
