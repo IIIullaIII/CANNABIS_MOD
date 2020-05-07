@@ -13,11 +13,13 @@
 
 Hemp=Hanf
 Hemp (climbing plant)=Hanf (kletternde Pflanze)
+Hemp (flowering)=Hanf (blühend)
 Hemp (seedling)=Hanf (Sämling)
-Hemp (sproutling)=Hanf (Sprießend)
+Hemp (sproutling)=Hanf (sprießend)
 
 ### canapa_rossa.lua ###
 
+Hemp (Red flowering)=Hanf (Rot blühend)
 Hemp red=Roter Hanf
 Hemp red (climbing plant)=Roter Hanf (kletternde Pflanze)
 Hemp red (sproutling)=Roter Hanf (Sämling)
@@ -25,14 +27,14 @@ Hemp red(seedling)=Roter Hanf (Sprießend)
 
 ### craftitem.lua ###
 
+BioFuel=BioKraftstoff
 Bread=Brot
 Fiber=Faser
 Flour=Mehl
-Fuel=Kraftstoff
 Hemp Flower=Hanfblume
 Hemp Glue=Hanfkleber
 Hemp Oil=Hanföl
-Hemp Raisin=Hanfrosine
+Hemp Resin=Hanfharz
 Paper=Papier
 Plastic=Plastik
 
@@ -48,18 +50,18 @@ Hemp red Flower=Roter Hanf Blüte
 
 ### joint.lua ###
 
-Joint accendino=
-Joint cartina=
-Joint cartina con erba=
-Joint cartina con fumo=
-Joint cima triturata=
-Joint erba acceso=
-Joint erba spento=
-Joint filter confezione=
-Joint filto=
-Joint fumo acceso=
-Joint fumo spento=
-Joint fumo triturato=
+Filter=Filter
+Filters pack=Filterpaket
+Flowering chopped=blühend gehäckselt
+Hash melted=Haschisch geschmolzen
+Joint of hash lit=Haschisch Joint angezündet
+Joint of hash unlit=Haschisch Joint nicht angezündet
+Joint of weed lit=Joint aus Gras angezündet
+Joint of weed unlit=Joint aus Gras nicht angezündet
+Lighter=Feuerzeug
+Rolling paper=Zigarettenpapier
+Rolling paper with hemp leaves and flowering chopped =Zigarettenpapier mit Hanfblättern und gehäckselten Blüten
+Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
 
 ### node_ingot.lua ###
 

@@ -22,7 +22,7 @@ minetest.register_node("cannabis:canapa", {
    items = {
       {items = {"cannabis:canapa"}, rarity = 1 },
       {items = {"cannabis:canapa_leaves"}, rarity = 1 },
-      {items = {"cannabis:canapa_seed"}, rarity = 1 },
+     -- {items = {"cannabis:canapa_seed"}, rarity = 1 },
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
@@ -34,10 +34,16 @@ minetest.register_node("cannabis:canapa", {
 function minetest.grow_canapa(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
-	if name ~= "default:dirt_with_grass" and name ~= "default:dirt" then
+	if             name ~= "default:dirt_with_grass" 
+	           and name ~= "default:dirt" 
+	           and name ~= "default:dirt_with_rainforest_litter"
+	           and name ~= "default:dry_dirt"
+	           and name ~= "default:dirt_with_snow"
+	           and name ~= "default:dirt_with_coniferous_litter"   
+	            then
 		return
 	end
-	if not minetest.find_node_near(pos, 1, {"group:water"}) then
+	if not minetest.find_node_near(pos, 3, {"group:water"}) then
 		return
 	end
 	pos.y = pos.y + 1
@@ -47,19 +53,30 @@ function minetest.grow_canapa(pos, node)
 		pos.y = pos.y + 1
 		node = minetest.get_node(pos)
 	end
+		if height==6 then
+	minetest.set_node(pos, {name = "cannabis:flowering"})
+	--minetest.swap_node(pos, {name = "grow:liva2" })
+	else
 	if height == 6 or node.name ~= "air" then
 		return
 	end
 	minetest.set_node(pos, {name = "cannabis:canapa"})
 	return true
 end
+end
 --mapgen
 minetest.register_abm({
     label = "Grow canapa",
 	nodenames = {"cannabis:canapa"},
-	neighbors ={"default:dirt_with_grass"},
-	interval = 14,
-	chance = 71,
+	neighbors ={"default:dirt_with_grass", 
+	            "default:dirt", 
+	            "default:dirt_with_rainforest_litter",
+	            "default:dry_dirt",
+	            "default:dirt_with_snow",
+	            "default:dirt_with_coniferous_litter"  
+	},
+	interval = 2,
+	chance = 10,
 	action = function(...)
 		minetest.grow_canapa(...)
 	end
@@ -88,7 +105,8 @@ minetest.register_biome({
 	
     minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"default:dirt_with_grass"},
+		place_on = {"default:dirt_with_grass",
+		"default_dirt"},
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
@@ -98,12 +116,16 @@ minetest.register_biome({
 			octaves = 3,
 			persist = 1.5
 		},
-        biomes = {"canapa_swamp"},
+		fill_ratio = 0.03,
+        biomes = {"canapa_swamp",
+        "tundra_beach",
+        "savanna_shore",
+        "delicious_forest_shore"},
 		y_min = 1,
 		y_max = 5,
 		decoration = "cannabis:canapa",
 		height = 5,
-		height_max = 5, 
+		height_max = 0, 
 		spawn_by = "default:water_source",
 		num_spawn_by = 1,
 	})
@@ -159,7 +181,27 @@ minetest.register_node('cannabis:sproutling', {
 	sounds = "cannabis_canapa_s3",
 	buildable_to = true,
 })
-
+minetest.register_node('cannabis:flowering', {
+	description = S("Hemp (flowering)"),
+	drawtype = 'plantlike',
+	waving = 1,
+	tiles = { 'cannabis_canapa_flower.png' },
+	inventory_image = 'cannabis_canapa_flower.png',
+	wield_image = 'cannabis_canapa_flower.png',
+	sunlight_propagates = true,
+	paramtype = 'light',
+	walkable = false,
+	groups = { snappy = 3, poisonivy=1, flora_block=1 },
+	sounds = "cannabis_canapa_s3",
+	buildable_to = true,
+	  drop = {
+   max_items = 3,
+   items = {
+      {items = {"cannabis:canapa_flower"}, rarity = 1 },
+    --  {items = {"cannabis:canapa_leaves"}, rarity = 1 },
+        {items = {"cannabis:canapa_seed"}, rarity = 1 },
+   }}
+})
 minetest.register_node('cannabis:climbing', {
 	description = S("Hemp (climbing plant)"),
 	drawtype = 'signlike',
