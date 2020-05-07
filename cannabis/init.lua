@@ -1,5 +1,18 @@
---aliases
---minetest.get_modpath("cannabis")
+cannabis = {}       -- A global Object for the mod
+cannabis.path = minetest.get_modpath("cannabis") -- The path of the mod
+local path = cannabis.path
+
+-- Get Boilerplate to translate
+local S
+if(minetest.get_translator) then
+   S = minetest.get_translator(minetest.get_current_modname())
+
+else
+    S = function ( s ) return s end
+
+end
+
+cannabis.S = S 
 minetest.register_alias("canapa","cannabis:canapa")
 
 --tools
