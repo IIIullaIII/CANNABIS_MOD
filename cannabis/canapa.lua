@@ -43,7 +43,7 @@ function minetest.grow_canapa(pos, node)
 	            then
 		return
 	end
-	if not minetest.find_node_near(pos, 1, {"group:water"}) then
+	if not minetest.find_node_near(pos, 3, {"group:water"}) then
 		return
 	end
 	pos.y = pos.y + 1
