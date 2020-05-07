@@ -1,6 +1,6 @@
 -- get Boilerplate for Translations
 local S = cannabis.S
-local path = cannabis.path
+
 	minetest.register_craftitem("cannabis:joint_fumo_acceso", {
 	description = S("Joint of hash lit"),
 	inventory_image = "joint_joint_fac.png",
