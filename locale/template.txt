@@ -1,0 +1,105 @@
+# textdomain: cannabis
+
+
+### armor.lua ###
+
+ Boots=
+ Chestplate=
+ Helmet=
+ Hemp Shield=
+ Leggings=
+
+### canapa.lua ###
+
+Hemp=
+Hemp (climbing plant)=
+Hemp (flowering)=
+Hemp (seedling)=
+Hemp (sproutling)=
+
+### canapa_rossa.lua ###
+
+Hemp (Red flowering)=
+Hemp red=
+Hemp red (climbing plant)=
+Hemp red (sproutling)=
+Hemp red(seedling)=
+
+### craftitem.lua ###
+
+BioFuel=
+Bread=
+Fiber=
+Flour=
+Hemp Flower=
+Hemp Glue=
+Hemp Oil=
+Hemp Resin=
+Paper=
+Plastic=
+
+### craftitem.lua ###
+### craftred.lua ###
+
+Hemp Leaves=
+Hemp Seed=
+
+### craftred.lua ###
+
+Hemp red Flower=
+
+### joint.lua ###
+
+Filter=
+Filters pack=
+Flowering chopped=
+Hash melted=
+Joint of hash lit=
+Joint of hash unlit=
+Joint of weed lit=
+Joint of weed unlit=
+Lighter=
+Rolling paper=
+Rolling paper with hemp leaves and flowering chopped =
+Rolling paper with hemp leaves melted hash=
+
+### node_ingot.lua ###
+
+Adminh Block=
+Adminh Ingot=
+Fabric Block=
+Fabric Ingot=
+Fiber Block=
+Fiber Ingot=
+High Performance Block=
+High Performance Block Hemp=
+High Performance Ingot=
+Leaves Block=
+Leaves Ingot=
+Mixed HR Ingot=
+Red Leaves Block=
+
+### tools.lua ###
+
+Hemp Admin High Performance Sword=
+Hemp Adminh Pickaxe=
+Hemp Bronze Axe=
+Hemp Bronze Pickaxe=
+Hemp Bronze Shovel=
+Hemp Bronze Sword=
+Hemp Diamond Axe=
+Hemp Diamond Pickaxe=
+Hemp Diamond Shovel=
+Hemp Diamond Sword=
+Hemp High Performance Axe=
+Hemp High Performance Sword=
+Hemp High Pickaxe=
+Hemp High Shovel=
+Hemp Mese Axe=
+Hemp Mese Pickaxe=
+Hemp Mese Shovel=
+Hemp Mese Sword=
+Hemp Steel Axe=
+Hemp Steel Pickaxe=
+Hemp Steel Shovel=
+Hemp Steel Sword=

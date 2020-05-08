@@ -181,6 +181,4 @@ minetest.register_craft({
 -- underwatercolor will be the value (one of the tables above)
 --for color, smokecolor in pairs(smokeCOLOR) do
     -- water
- 
-
 --end

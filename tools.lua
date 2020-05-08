@@ -295,10 +295,6 @@ minetest.register_tool("cannabis:sword_hemp_high", {
 })
 
 
-
-
-
-
 --pick:___________________________________________________________________
 
 minetest.register_craft({

@@ -13,13 +13,13 @@
 
 Hemp=Hanf
 Hemp (climbing plant)=Hanf (kletternde Pflanze)
-Hemp (flowering)=
+Hemp (flowering)=Hanf (blühend)
 Hemp (seedling)=Hanf (Sämling)
-Hemp (sproutling)=Hanf (Sprießend)
+Hemp (sproutling)=Hanf (sprießend)
 
 ### canapa_rossa.lua ###
 
-Hemp (Red flowering)=
+Hemp (Red flowering)=Hanf (Rot blühend)
 Hemp red=Roter Hanf
 Hemp red (climbing plant)=Roter Hanf (kletternde Pflanze)
 Hemp red (sproutling)=Roter Hanf (Sämling)
@@ -27,14 +27,14 @@ Hemp red(seedling)=Roter Hanf (Sprießend)
 
 ### craftitem.lua ###
 
-BioFuel=
+BioFuel=BioKraftstoff
 Bread=Brot
 Fiber=Faser
 Flour=Mehl
 Hemp Flower=Hanfblume
 Hemp Glue=Hanfkleber
 Hemp Oil=Hanföl
-Hemp Resin=
+Hemp Resin=Hanfharz
 Paper=Papier
 Plastic=Plastik
 
@@ -50,18 +50,18 @@ Hemp red Flower=Roter Hanf Blüte
 
 ### joint.lua ###
 
-Filter=
-Filters pack=
-Flowering chopped=
-Hash melted=
-Joint of hash lit=
-Joint of hash unlit=
-Joint of weed lit=
-Joint of weed unlit=
-Lighter=
-Rolling paper=
-Rolling paper with hemp leaves and flowering chopped =
-Rolling paper with hemp leaves melted hash=
+Filter=Filter
+Filters pack=Filterpaket
+Flowering chopped=blühend gehäckselt
+Hash melted=Haschisch geschmolzen
+Joint of hash lit=Haschisch Joint angezündet
+Joint of hash unlit=Haschisch Joint nicht angezündet
+Joint of weed lit=Joint aus Gras angezündet
+Joint of weed unlit=Joint aus Gras nicht angezündet
+Lighter=Feuerzeug
+Rolling paper=Zigarettenpapier
+Rolling paper with hemp leaves and flowering chopped =Zigarettenpapier mit Hanfblättern und gehäckselten Blüten
+Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
 
 ### node_ingot.lua ###
 
@@ -81,6 +81,7 @@ Red Leaves Block=Roter Blätterblock
 
 ### tools.lua ###
 
+Hemp Admin High Performance Sword=Hanf Admin hochwertiges Schwert
 Hemp Adminh Pickaxe=Hanf Admin hochwertige Spitzhacke
 Hemp Bronze Axe= Hanf Bronze Axt
 Hemp Bronze Pickaxe=Hanf Bronze Spitzhacke
@@ -102,10 +103,3 @@ Hemp Steel Axe=Hanf Eisen Axt
 Hemp Steel Pickaxe=Hanf Eisen Spitzhacke
 Hemp Steel Shovel=Hanf Eisen Schaufel
 Hemp Steel Sword=Hanf Eisen Schwert
-
-
-##### not used anymore #####
-
-Fuel=Kraftstoff
-Hemp Raisin=Hanfrosine
-Hemp Admin High Performance Sword=Hanf Admin hochwertiges Schwert

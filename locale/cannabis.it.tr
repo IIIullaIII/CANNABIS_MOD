@@ -13,11 +13,13 @@
 
 Hemp=Canapa
 Hemp (climbing plant)=Canapa (rampicante)
+Hemp (flowering)=Canapa (infiorescena)
 Hemp (seedling)=Canapa (piantina)
 Hemp (sproutling)=Canapa (germoglio)
 
 ### canapa_rossa.lua ###
 
+Hemp (Red flowering)=Canapa rossa (infiorescena)
 Hemp red=Canapa rossa
 Hemp red (climbing plant)=Canapa rossa (rampicante)
 Hemp red (sproutling)=Canapa rossa (piantina)
@@ -79,6 +81,7 @@ Red Leaves Block=Blocco di foglie rosse
 
 ### tools.lua ###
 
+Hemp Admin High Performance Sword=
 Hemp Adminh Pickaxe=Piccone Adminh di canapa
 Hemp Bronze Axe=Ascia di canapa e bronzo
 Hemp Bronze Pickaxe=Piccone di canapa e bronzo
