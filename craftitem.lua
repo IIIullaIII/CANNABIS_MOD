@@ -16,7 +16,10 @@ minetest.register_craftitem("cannabis:canapa_plastic", {
 	description = S("Plastic"),
 	inventory_image = "cannabis_plastic.png",
 })
-
+minetest.register_craftitem("cannabis:canapa_cloth", {
+	description = S("Cloth"),
+	inventory_image = "cannabis_cloth.png",
+})
 minetest.register_craftitem("cannabis:canapa_paper", {
 	description = S("Paper"),
 	inventory_image = "cannabis_paper.png",
@@ -134,16 +137,15 @@ minetest.register_craft({
         
 
 
-
-
 minetest.register_craft({
-	output = "cannabis:canapa_seed 10 ",
+	output = "cannabis:canapa_cloth 3 ",
 	recipe = {
-		{"cannabis:canapa","",""},
-                {"","cannabis:canapa",""},
-                {"","","cannabis:canapa"},
+		{"cannabis:canapa_fiber", "cannabis:canapa_fiber", "cannabis:canapa_fiber"},
+        {"cannabis:canapa_fiber", "cannabis:canapa_fiber", "cannabis:canapa_fiber"},
 	}
 })
+
+
 
 
 minetest.register_craft({
@@ -172,7 +174,7 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "fuel",        
 	recipe = "cannabis:canapa_fuel",
-	burntime = 50,
+	burntime = 70,
 })
 
 

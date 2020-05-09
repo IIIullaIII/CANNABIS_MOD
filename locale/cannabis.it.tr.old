@@ -9,12 +9,6 @@
  Hemp Shield= Scudo di canapa
  Leggings=Gambali
 
-### bag.lua ###
-
-Large Bob Bag= Borsa BOB larga
-Medium Bob Bag= Borsa BOB media
-Small Bob Bag= Borsa BOB piccola
-
 ### canapa.lua ###
 
 Hemp=Canapa
@@ -23,15 +17,7 @@ Hemp (flowering)=Canapa (infiorescena)
 Hemp (seedling)=Canapa (piantina)
 Hemp (sproutling)=Canapa (germoglio)
 
-### canapa_ice.lua ###
-
-Hemp (Ice flowering)= Inffiorescenza di canapa Glaciale
-Hemp ice= Canapa Glaciale 
-Hemp ice (climbing plant)=Canapa Glaciale(rampicante)
-Hemp ice (sproutling)=Canapa Glaciale (piantina)
-Hemp ice(seedling)=Canapa Glaciale (germoglio)
-
-### canapa_red.lua ###
+### canapa_rossa.lua ###
 
 Hemp (Red flowering)=Canapa rossa (infiorescena)
 Hemp red=Canapa rossa
@@ -39,22 +25,10 @@ Hemp red (climbing plant)=Canapa rossa (rampicante)
 Hemp red (sproutling)=Canapa rossa (piantina)
 Hemp red(seedling)=Canapa rossa (germoglio)
 
-### craftice.lua ###
-
-Hemp ice Flower= Fiore di canapa glaciale
-
-### craftice.lua ###
-### craftitem.lua ###
-### craftred.lua ###
-
-Hemp Leaves= Foglie di canapa
-Hemp Seed= Semi di canapa
-
 ### craftitem.lua ###
 
 BioFuel=BioCarburante
 Bread=Pane
-Cloth= Stoffa
 Fiber=Fibra
 Flour=Farina
 Hemp Flower=Fiore di Canapa 
@@ -63,6 +37,12 @@ Hemp Oil=Olio di Canapa
 Hemp Resin=Resina di Canapa
 Paper=Carta
 Plastic=Plastica
+
+### craftitem.lua ###
+### craftred.lua ###
+
+Hemp Leaves= Foglie di canapa
+Hemp Seed= Semi di canapa
 
 ### craftred.lua ###
 
@@ -101,6 +81,7 @@ Red Leaves Block=Blocco di foglie rosse
 
 ### tools.lua ###
 
+Hemp Admin High Performance Sword=
 Hemp Adminh Pickaxe=Piccone Adminh di canapa
 Hemp Bronze Axe=Ascia di canapa e bronzo
 Hemp Bronze Pickaxe=Piccone di canapa e bronzo

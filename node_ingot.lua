@@ -142,12 +142,15 @@ minetest.register_craft({
 	output = "cannabis:foglie_ingot",
 })
 
-minetest.register_craft({
-	type = 'cooking',
-	recipe = "cannabis:canapa_paper",
-	output = "cannabis:tessuto_ingot",
-})
 
+  minetest.register_craft({
+	output = "cannabis:tessuto_ingot",
+	recipe = {
+		{"","",""},
+	   {"cannabis:canapa_glue","cannabis:canapa_glue",""},
+	 	{"cannabis:canapa_cloth","cannabis:canapa_cloth",""},
+	}
+})   
 minetest.register_craft({
 	type = 'cooking',
 	recipe = "cannabis:canapa_plastic",

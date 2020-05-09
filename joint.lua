@@ -69,11 +69,7 @@ local S = cannabis.S
 	inventory_image = "joint_filter.png",
     
 	})
-	minetest.register_craftitem("cannabis:joint_accendino", {
-	description = S("Lighter"),
-	inventory_image = "joint_accendino.png",
-    
-	})
+
 	--______________________________________________________________________________
 	--craft
     --______________________________________________________________________________
@@ -170,6 +166,14 @@ minetest.register_craft({
         {"cannabis:joint_erba_spento","cannabis:joint_accendino",""},
 	}
 })
+ minetest.register_craft({
+	output = "cannabis:joint_accendino 5 ",
+	recipe = {
+		{"default:steel_ingot","default:torch","cannabis:canapa_plastic"},
+                {"cannabis:canapa_plastic","cannabis:canapa_fuel","cannabis:canapa_plastic"},
+                {"cannabis:canapa_plastic","cannabis:canapa_plastic","cannabis:canapa_plastic"},
+	}
+})
 -----------------------------------------
 --local smokeCOLOR = {
    -- green = { a=64, r=1, g=255, b=1 } ,
@@ -182,3 +186,13 @@ minetest.register_craft({
 --for color, smokecolor in pairs(smokeCOLOR) do
     -- water
 --end
+if minetest.get_modpath("fire") then
+      minetest.register_craft({
+	output = "cannabis:joint_accendino 5 ",
+	recipe = {
+		{"default:steel_ingot","fire:flint_and_steel","cannabis:canapa_plastic"},
+                {"cannabis:canapa_plastic","cannabis:canapa_fuel","cannabis:canapa_plastic"},
+                {"cannabis:canapa_plastic","cannabis:canapa_plastic","cannabis:canapa_plastic"},
+	}
+})
+end

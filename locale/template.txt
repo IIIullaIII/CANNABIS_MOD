@@ -9,6 +9,12 @@
  Hemp Shield=
  Leggings=
 
+### bag.lua ###
+
+Large Bob Bag=
+Medium Bob Bag=
+Small Bob Bag=
+
 ### canapa.lua ###
 
 Hemp=
@@ -17,7 +23,15 @@ Hemp (flowering)=
 Hemp (seedling)=
 Hemp (sproutling)=
 
-### canapa_rossa.lua ###
+### canapa_ice.lua ###
+
+Hemp (Ice flowering)=
+Hemp ice=
+Hemp ice (climbing plant)=
+Hemp ice (sproutling)=
+Hemp ice(seedling)=
+
+### canapa_red.lua ###
 
 Hemp (Red flowering)=
 Hemp red=
@@ -25,10 +39,22 @@ Hemp red (climbing plant)=
 Hemp red (sproutling)=
 Hemp red(seedling)=
 
+### craftice.lua ###
+
+Hemp ice Flower=
+
+### craftice.lua ###
+### craftitem.lua ###
+### craftred.lua ###
+
+Hemp Leaves=
+Hemp Seed=
+
 ### craftitem.lua ###
 
 BioFuel=
 Bread=
+Cloth=
 Fiber=
 Flour=
 Hemp Flower=
@@ -37,12 +63,6 @@ Hemp Oil=
 Hemp Resin=
 Paper=
 Plastic=
-
-### craftitem.lua ###
-### craftred.lua ###
-
-Hemp Leaves=
-Hemp Seed=
 
 ### craftred.lua ###
 
@@ -81,7 +101,6 @@ Red Leaves Block=
 
 ### tools.lua ###
 
-Hemp Admin High Performance Sword=
 Hemp Adminh Pickaxe=
 Hemp Bronze Axe=
 Hemp Bronze Pickaxe=
