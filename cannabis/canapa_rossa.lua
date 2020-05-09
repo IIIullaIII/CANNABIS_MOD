@@ -38,9 +38,14 @@ minetest.register_node("cannabis:canapa_red", {
 function minetest.grow_canapa_red(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
-	if name ~= "default:sand" and name ~= "default:desert_sand" 
-	                          and name ~= "default:silver_sand"
-	                          and name ~= "default:dry_dirt_with_dry_grass" then
+	        if name ~= "default:sand" 
+	       and name ~= "default:desert_sand"
+	       and name ~= "default:sandstone"  
+	       and name ~= "default:silver_sand"
+	       and name ~= "default:dry_dirt_with_dry_grass" 
+	       and name ~= "default:ddirt_with_grass" 
+	       and name ~= "default:dirt" 
+	       and name ~= "default:dry_dirt"then
 		return
 	end
 	if not minetest.find_node_near(pos, 5, {"group:water"}) then
@@ -68,19 +73,27 @@ minetest.register_abm({
     label = "Grow canapa red",
 	nodenames = {"cannabis:canapa_red"},
 	neighbors ={"default:sand",
+	            "default:sandstone",
 	            "default:desert_sand",
 	            "default:silver_sand",
-	            "default:dry_dirt_with_dry_grass"},
+	            "default:dry_dirt_with_dry_grass",
+	            "default:dry_dirt",
+	            "default:dirt_with_grass",
+	            "default:dirt"},
 	interval = 2,
 	chance = 10,
 	action = function(...)
 		minetest.grow_canapa_red(...)
 	end
 })
-minetest.register_biome({
+--___________________________________________________________
+if minetest.get_modpath("default") then
+--[[minetest.register_biome({
 		name = "canapa_swampr",
 		--node_dust = "",
-		node_top ={"default:desert_sand","summer:sabbia_mare"},
+		node_top ={"default:desert_sand",
+		           "default:sand",
+		           "default:silver_sand"},
 		depth_top = 1,
 		node_filler = "default:desert_sand",
 		depth_filler = 1,
@@ -96,35 +109,59 @@ minetest.register_biome({
 		--heat_point = 0,
 	--	humidity_point = 1,
 	})
-    
+    ]]
     
 	
     minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"summer:sabbia_mare","default:dirt_with_grass","default:desert_sand","default:dirt_with_dry_grass"},
+		place_on = {"default:silver_sand",
+		            "default:desert_sand",
+		            "default:dirt",
+		            "default:dry_dirt",
+		            "default:sand",
+		            "default:dry_dirt_with_dry_grass"
+		           },
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
 			scale = 0.7,
-			spread = {x = 100, y = 100, z = 100},
-			seed = 1,
+			spread = {x = 100, y =100, z =100},
+			seed = 354,
 			octaves = 3,
 			persist = 1.5
 		},
-        biomes = {"canapa_swampr"},
+        biomes = {--"canapa_swampr",
+                   "sandstone_desert",
+                   "savanna",
+                   "taiga",
+                   "coniferous_forest",
+                   "deciduous_forest",
+                   "desert",
+                   "sandstone_desert",
+                   "cold_desert","canapa_swamp",
+                   "tundra_beach",
+                   "savanna_shore",
+                   "savanna_ocean",
+                   "delicious_forest_shore",
+                   "floatland_grassland"},
 		y_min = 1,
-		y_max = 5,
+		y_max = 2,
 		decoration = "cannabis:canapa_red",
-		height = 5,
-		height_max = 5, 
-		spawn_by ={ "default:desert_sand","default:sand"},
+		height = 2,
+		height_max = 7, 
+		spawn_by ="default:water_source",
 		num_spawn_by = 1,
 	})
 
 
-	minetest.register_decoration({
+--[[	minetest.register_decoration({
 		deco_type = "schematic",
-		place_on = {"default:dirt","default:dirt_with_grass","default:desert_sand","default:dirt_with_dry_grass"},
+		place_on = {"default:dry_dirt",
+		            "default:dirt",
+		            "default:silver_sand",
+		            "default:desert_sand",
+		            "default:dry_dirt_with_dry_grass",
+		            "default:sand"},
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
@@ -134,13 +171,25 @@ minetest.register_biome({
 			octaves = 3,
 			persist = 0.7
 		},
-		biomes = {"canapa_swampr"},
-		y_min = 0,
-		y_max = 31000,
-		schematic = path .. "/schematics/canapa.mts",
-	})
+		biomes = {--"canapa_swampr",
+		           "rainforest_swamp",
+		           "savanna",
+                   "taiga",
+                   "coniferous_forest",
+                   "deciduous_forest",
+                   "desert",
+                   "sandstone_desert",
+                   "cold_desert",
+                   "tundra_beach",
+                   "savanna_shore",
+                   "delicious_forest_shore",
+                   "floatland_grassland"},
+		y_min = -1,
+		y_max = 0,
+		schematic = path .. "/schematics/canapa_red.mts",
+	})]]
 
-
+end
 minetest.register_node('cannabis:seedling_r', {
 	description = S("Hemp red(seedling)"),
 	drawtype = 'plantlike',

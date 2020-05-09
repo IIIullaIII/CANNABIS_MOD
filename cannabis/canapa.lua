@@ -81,10 +81,18 @@ minetest.register_abm({
 		minetest.grow_canapa(...)
 	end
 })
-minetest.register_biome({
+if minetest.get_modpath("default") then
+
+--[[minetest.register_biome({
 		name = "canapa_swamp",
 		--node_dust = "",
-		node_top = "default:dirt_with_grass",
+		node_top ={ "default:dirt_with_grass",
+		             "default:dirt_with_grass" ,
+	                "default:dirt" ,
+	                "default:dirt_with_rainforest_litter",
+	                "default:dry_dirt",
+	                "default:dirt_with_snow",
+	                "default:dirt_with_coniferous_litter"},
 		depth_top = 1,
 		node_filler = "default:dirt",
 		depth_filler = 3,
@@ -95,37 +103,55 @@ minetest.register_biome({
 		--node_river_water = "",
 		node_riverbed = "default:sand",
 		depth_riverbed = 2,
-		y_min = -1,
-		y_max = 0,
+		y_min = 1,
+		y_max = 2,
 		heat_point = 89,
 		humidity_point = 22,
-	})
+	})]]
     
     
 	
     minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"default:dirt_with_grass",
-		"default_dirt"},
+		place_on = {"default:dirt_with_grass" ,
+	                "default:dirt" ,
+	                "default:dirt_with_rainforest_litter",
+	                "default:dry_dirt",
+	                "default:dirt_with_snow",
+	                "default:dirt_with_coniferous_litter" },
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
 			scale = 0.7,
-			spread = {x = 100, y = 100, z = 100},
-			seed = 1,
+			spread = {x = 100, y =100, z = 100},
+			seed = 354,
 			octaves = 3,
 			persist = 1.5
 		},
 		fill_ratio = 0.03,
-        biomes = {"canapa_swamp",
-        "tundra_beach",
-        "savanna_shore",
-        "delicious_forest_shore"},
+        biomes = {--"canapa_swamp",
+                   "cold_desert",
+                   "rainforest",
+                   "grassland_dunes",
+                   "coniferous_forest_dunes",
+                   "savanna",
+                   "taiga",
+                   "coniferous_forest",
+                   "deciduous_forest",
+                   "desert",
+                   "sandstone_desert",
+                   "cold_desert","canapa_swamp",
+                   "tundra_beach",
+                   "savanna_shore",
+                   "delicious_forest_shore",
+                   "grassland",
+                   "floatland_grassland"},
+        
 		y_min = 1,
-		y_max = 5,
+		y_max = 3,
 		decoration = "cannabis:canapa",
-		height = 5,
-		height_max = 0, 
+		height = 2,
+		height_max = 7, 
 		spawn_by = "default:water_source",
 		num_spawn_by = 1,
 	})
@@ -133,7 +159,9 @@ minetest.register_biome({
 
 	minetest.register_decoration({
 		deco_type = "schematic",
-		place_on = {"default:dirt_with_grass"},
+		place_on = {"default:dirt_with_grass",
+		            "default:dirt",
+		            "default:sand"},
 		sidelen = 16,
 		noise_params = {
 			offset = -0.3,
@@ -143,12 +171,24 @@ minetest.register_biome({
 			octaves = 3,
 			persist = 0.7
 		},
-		biomes = {"canapa_swamp"},
+		 biomes = {--"canapa_swampr",
+                   "rainforest_swamp",
+                   "savanna",
+                   "taiga",
+                   "coniferous_forest",
+                   "deciduous_forest",
+                   "desert",
+                   "sandstone_desert",
+                   "cold_desert","canapa_swamp",
+                   "tundra_beach",
+                   "savanna_shore",
+                   "delicious_forest_shore",
+                   "floatland_grassland"},
 		y_min = 0,
 		y_max = 0,
 		schematic = path .. "/schematics/canapa.mts",--minetest.get_modpath("cannabis").."/schematics/canapa.mts",
 	})
-
+end
 -- This file supplies hemp for the plantlife modpack
 -- Last revision:  2016-01-14
 
