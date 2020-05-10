@@ -43,7 +43,7 @@ function minetest.grow_canapa_red(pos, node)
 	       and name ~= "default:sandstone"  
 	       and name ~= "default:silver_sand"
 	       and name ~= "default:dry_dirt_with_dry_grass" 
-	       and name ~= "default:ddirt_with_grass" 
+	       and name ~= "default:dirt_with_grass" 
 	       and name ~= "default:dirt" 
 	       and name ~= "default:dry_dirt"then
 		return
