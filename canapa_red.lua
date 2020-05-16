@@ -88,29 +88,7 @@ minetest.register_abm({
 })
 --___________________________________________________________
 if minetest.get_modpath("default") then
---[[minetest.register_biome({
-		name = "canapa_swampr",
-		--node_dust = "",
-		node_top ={"default:desert_sand",
-		           "default:sand",
-		           "default:silver_sand"},
-		depth_top = 1,
-		node_filler = "default:desert_sand",
-		depth_filler = 1,
-		--node_stone = "",
-		--node_water_top = "",
-		--depth_water_top = ,
-		--node_water = "",
-		--node_river_water = "",
-		node_riverbed = "default:sand",
-		depth_riverbed = 2,
-		y_min = 1,
-		y_max =31000,
-		--heat_point = 0,
-	--	humidity_point = 1,
-	})
-    ]]
-    
+
 	
     minetest.register_decoration({
 		deco_type = "simple",
