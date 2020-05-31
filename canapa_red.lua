@@ -42,7 +42,7 @@ function minetest.grow_canapa_red(pos, node)
 	       and name ~= "default:desert_sand"
 	       and name ~= "default:sandstone"  
 	       and name ~= "default:silver_sand"
-	       and name ~= "default:dry_dirt_with_dry_grass" 
+	       and name ~= "default:dirt_with_dry_grass" 
 	       and name ~= "default:dirt_with_grass" 
 	       and name ~= "default:dirt" 
 	       and name ~= "default:dry_dirt"then
@@ -76,7 +76,7 @@ minetest.register_abm({
 	            "default:sandstone",
 	            "default:desert_sand",
 	            "default:silver_sand",
-	            "default:dry_dirt_with_dry_grass",
+	            "default:dirt_with_dry_grass",
 	            "default:dry_dirt",
 	            "default:dirt_with_grass",
 	            "default:dirt"},
@@ -97,7 +97,7 @@ if minetest.get_modpath("default") then
 		            "default:dirt",
 		            "default:dry_dirt",
 		            "default:sand",
-		            "default:dry_dirt_with_dry_grass"
+		            "default:dirt_with_dry_grass"
 		           },
 		sidelen = 16,
 		noise_params = {
@@ -138,7 +138,7 @@ if minetest.get_modpath("default") then
 		            "default:dirt",
 		            "default:silver_sand",
 		            "default:desert_sand",
-		            "default:dry_dirt_with_dry_grass",
+		            "default:dirt_with_dry_grass",
 		            "default:sand"},
 		sidelen = 16,
 		noise_params = {
