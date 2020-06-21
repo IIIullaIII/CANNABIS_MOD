@@ -21,31 +21,3 @@ minetest.register_tool("cannabis:bag_bob_large", {
 	groups = {bagslots=24},
 })
 end
--- register bag crafts
---if minetest.get_modpath("farming") ~= nil then
-	minetest.register_craft({
-		output = "cannabis:bag_bob_small",
-		recipe = {
-			{"",           "cannabis:canapa_fiber", ""},
-			{"cannabis:canapa_cloth", "cannabis:canapa_cloth",     "cannabis:canapa_cloth"},
-			{"cannabis:canapa_cloth", "cannabis:canapa_cloth",     "cannabis:canapa_cloth"},
-		},
-	})
-
-	minetest.register_craft({
-		output = "cannabis:bag_bob_medium",
-		recipe = {
-			{"",               "",                            ""},
-			{"cannabis:canapa_fiber", "cannabis:bag_small", "cannabis:canapa_fiber"},
-			{"cannabis:canapa_fiber", "cannabis:bag_small", "cannabis:canapa_fiber"},
-		},
-	})
-
-	minetest.register_craft({
-		output = "cannabis:bag_bob_large",
-		recipe = {
-			{"",               "",                             ""},
-			{"cannabis:cannabis_tessuto_block", "cannabis:bag_medium", "cannabis:cannabis_tessuto_block"},
-			{"cannabis:cannabis_tessuto_block", "cannabis:bag_medium", "cannabis:cannabis_tessuto_block"},
-	    },
-	})

@@ -212,3 +212,34 @@ minetest.register_craft({
 	recipe = {"cannabis:fibra_ingot", "cannabis:foglie_ingot", "cannabis:tessuto_ingot"}
 })
 
+-- register bag crafts
+if minetest.get_modpath("unified_inventory") ~= nil then
+	minetest.register_craft({
+		output = "cannabis:bag_bob_small",
+		recipe = {
+			{"","cannabis:canapa_fiber",""},
+			{"cannabis:canapa_cloth", "cannabis:canapa_cloth",     "cannabis:canapa_cloth"},
+			{"cannabis:canapa_cloth", "cannabis:canapa_cloth",     "cannabis:canapa_cloth"},
+		},
+	})
+	
+
+	minetest.register_craft({
+		output = "cannabis:bag_bob_medium",
+		recipe = {
+			{"cannabis:canapa_cloth","","cannabis:canapa_cloth"},
+			{"cannabis:canapa_fiber", "cannabis:bag_bob_small", "cannabis:canapa_fiber"},
+			{"cannabis:canapa_fiber", "cannabis:bag_bob_small", "cannabis:canapa_fiber"},
+		},
+	})
+
+	minetest.register_craft({
+		output = "cannabis:bag_bob_large",
+		recipe = {
+			{"cannabis:canapa_cloth","cannabis:canapa_cloth","cannabis:canapa_cloth"},
+			{"cannabis:cannabis_tessuto_block", "cannabis:bag_bob_medium", "cannabis:cannabis_tessuto_block"},
+			{"cannabis:cannabis_tessuto_block", "cannabis:bag_bob_medium", "cannabis:cannabis_tessuto_block"},
+	    },
+	})
+
+end
