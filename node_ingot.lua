@@ -81,7 +81,7 @@ minetest.register_node("cannabis:hp_block_canapa",
 	tiles = {"hp_block_canapa.png"},
 	is_ground_content = false,
 	groups = {choppy = 30, oddly_breakable_by_hand = 1, flammable = 3, wood = 1},
-	sounds = "cannabis:cannabis_canapa_s2",
+	sounds = {"cannabis_canapa_s2"},
 })
 
 minetest.register_node("cannabis:cannabis_foglie_block", {
@@ -89,21 +89,21 @@ minetest.register_node("cannabis:cannabis_foglie_block", {
 	tiles = { "cannabis_foglie_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
-	sounds = "cannabis:cannabis_canapa_s3"
+	sounds = {"cannabis_canapa_s3"}
 })
 minetest.register_node("cannabis:cannabis_foglie_red_block", {
 	description = S("Red Leaves Block"),
 	tiles = { "cannabis_foglie_red_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
-	sounds = "cannabis:cannabis_canapa_s3"
+	sounds = {"cannabis_canapa_s3"}
 })
 minetest.register_node("cannabis:cannabis_tessuto_block", {
 	description = S("Fabric Block"),
 	tiles = { "cannabis_tessuto_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
-	sounds = "cannabis_canapa_s3"
+	sounds = {"cannabis_canapa_s3"}
 })
 
 
@@ -112,21 +112,21 @@ minetest.register_node("cannabis:cannabis_high_performance_block", {
 	tiles = { "cannabis_high_performance_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
-	sounds = "cannabis_canapa_s3"
+	sounds = {"cannabis_canapa_s3"}
 })
 minetest.register_node("cannabis:cannabis_fibra_block", {
 	description = S("Fiber Block"),
 	tiles = { "cannabis_fibra_block.png" },
 	is_ground_content = false,
 	groups = {cracky=1, level=2},
-	sounds = "cannabis_canapa_s3"
+	sounds = {"cannabis_canapa_s3"}
 })
 minetest.register_node("cannabis:cannabis_adminh_block", {
 	description = S("Adminh Block"),
 	tiles = { "cannabis_adminh_block.png" },
 	is_ground_content = false,
 	groups = {unbreackable =1},
-	sounds = "cannabis:cannabis_canapa_s3"
+	sounds = {"cannabis_canapa_s3"}
 })
 
 minetest.register_craft({

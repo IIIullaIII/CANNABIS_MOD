@@ -32,7 +32,7 @@ dofile(path.."/wool.lua")
 --dofile(path.."/bag.lua")
 dofile(path.."/canapa_ice.lua")
 dofile(path.."/craftice.lua")
-
+--dofile(path.."/ethereal.lua")
 
 
 if minetest.get_modpath("3d_armor") then

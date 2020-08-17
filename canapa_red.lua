@@ -16,7 +16,7 @@ minetest.register_node("cannabis:canapa_red", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0.5, 0.3}
 	},
 	groups = {snappy = 3, flammable = 2},
-	sounds = "cannabis_canapa_s",
+sounds ={"cannabis_canapa_s"},
         drop = {
    max_items = 3,
    items = {
@@ -42,7 +42,7 @@ function minetest.grow_canapa_red(pos, node)
 	       and name ~= "default:desert_sand"
 	       and name ~= "default:sandstone"  
 	       and name ~= "default:silver_sand"
-	       and name ~= "default:dirt_with_dry_grass" 
+	       and name ~= "default:dry_dirt_with_dry_grass" 
 	       and name ~= "default:dirt_with_grass" 
 	       and name ~= "default:dirt" 
 	       and name ~= "default:dry_dirt"then
@@ -76,7 +76,7 @@ minetest.register_abm({
 	            "default:sandstone",
 	            "default:desert_sand",
 	            "default:silver_sand",
-	            "default:dirt_with_dry_grass",
+	            "default:dry_dirt_with_dry_grass",
 	            "default:dry_dirt",
 	            "default:dirt_with_grass",
 	            "default:dirt"},
@@ -97,7 +97,7 @@ if minetest.get_modpath("default") then
 		            "default:dirt",
 		            "default:dry_dirt",
 		            "default:sand",
-		            "default:dirt_with_dry_grass"
+		            "default:dry_dirt_with_dry_grass"
 		           },
 		sidelen = 16,
 		noise_params = {
@@ -138,7 +138,7 @@ if minetest.get_modpath("default") then
 		            "default:dirt",
 		            "default:silver_sand",
 		            "default:desert_sand",
-		            "default:dirt_with_dry_grass",
+		            "default:dry_dirt_with_dry_grass",
 		            "default:sand"},
 		sidelen = 16,
 		noise_params = {
@@ -179,7 +179,7 @@ minetest.register_node('cannabis:seedling_r', {
 	paramtype = 'light',
 	walkable = false,
 	groups = { snappy = 3, poisonivy=1, flora_block=1 },
-	sounds = "cannabis_canapa_s3",
+sounds ={"cannabis_canapa_s3"},
 	buildable_to = true,
 })
 
@@ -194,7 +194,7 @@ minetest.register_node('cannabis:sproutling_r', {
 	paramtype = 'light',
 	walkable = false,
 	groups = { snappy = 3, poisonivy=1, flora_block=1 },
-	sounds = "cannabis_canapa_s3",
+sounds ={"cannabis_canapa_s3"},
 	buildable_to = true,
 })
 
@@ -209,7 +209,7 @@ minetest.register_node('cannabis:climbing_r', {
 	paramtype2 = 'wallmounted',
 	walkable = false,
 	groups = { snappy = 3, poisonivy=1, flora_block=1 },
-	sounds = "cannabis_canapa_s3",
+sounds ={"cannabis_canapa_s3"},
 	selection_box = {
 		type = "wallmounted",
 		--wall_side = = <default>
@@ -229,7 +229,7 @@ minetest.register_node('cannabis:flowering_red', {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0.5, 0.3}
 	},
 	groups = { snappy = 3, poisonivy=1, flora_block=1 },
-	sounds = "cannabis_canapa_s3",
+sounds ={"cannabis_canapa_s3"},
 	buildable_to = true,
 	  drop = {
    max_items = 3,
