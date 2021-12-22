@@ -74,14 +74,21 @@ Filter=
 Filters pack=
 Flowering chopped=
 Hash melted=
+Ice flowering chopped=
 Joint of hash lit=
 Joint of hash unlit=
+Joint of ice_weed lit=
+Joint of ice_weed unlit=
+Joint of red_weed unlit=
 Joint of weed lit=
 Joint of weed unlit=
 Lighter=
+Red flowering chopped=
 Rolling paper=
 Rolling paper with hemp leaves and flowering chopped =
-Rolling paper with hemp leaves melted hash=
+Rolling paper with hemp leaves and ice flowering chopped =
+Rolling paper with hemp leaves and melted hash=
+Rolling paper with hemp leaves and red flowering chopped =
 
 ### node_ingot.lua ###
 
@@ -94,6 +101,7 @@ Fiber Ingot=
 High Performance Block=
 High Performance Block Hemp=
 High Performance Ingot=
+Ice Leaves Block=
 Leaves Block=
 Leaves Ingot=
 Mixed HR Ingot=

@@ -4,6 +4,10 @@ local S = cannabis.S
 minetest.register_craftitem("cannabis:canapa_ice_seed", {
 	description = S("Hemp Seed"),
 	inventory_image = "cannabis_canapa_ice_seed.png",
+	groups = {seed = 2, food_artichoke = 1, flammable = 2},
+	on_place = function(itemstack, placer, pointed_thing)
+		return farming.place_seed(itemstack, placer, pointed_thing, "cannabis:canapa_ice")
+	end,
 	on_use = minetest.item_eat(10),
 })
 
@@ -75,7 +79,7 @@ minetest.register_craft({
 	}
 })
        minetest.register_craft({
-	output = "cannabis:climbing_i ",
+	output = "cannabis:climbing_i",
 	recipe = {
 		{"cannabis:canapa_ice_leaves","cannabis:canapa_ice_leaves","cannabis:canapa_ice_leaves"},
                 {"cannabis:canapa_ice_leaves","cannabis:canapa_ice_leaves","cannabis:canapa_ice_leaves"},
@@ -134,7 +138,7 @@ minetest.register_craft({
 })
 
  minetest.register_craft({
-	output = "cannabis:cannabis_foglie_ice_block ",
+	output = "cannabis:cannabis_foglie_ice_block",
 	recipe = {
 		{"cannabis:climbing_i","cannabis:climbing_i","cannabis:climbing_i"},
          {"cannabis:climbing_i","cannabis:climbing_i","cannabis:climbing_i"},

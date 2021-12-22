@@ -26,19 +26,66 @@ sounds ={"cannabis_canapa_s"},
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
-		default.dig_up(pos, node, digger)
+		cannabis.dig_up_ice(pos, node, digger)
 	end,
 })
 --____________________________________
-
+if minetest.get_modpath("farming") then
+function minetest.grow_canapa_ice(pos, node)
+	pos.y = pos.y - 1
+	local name = minetest.get_node(pos).name
+	        if name ~= "farming:soil_wet"
+	       then
+		return
+	end
+	if not minetest.find_node_near(pos, 5, {"default:water"}) then
+		return
+	end
+	
+	pos.y = pos.y + 1
+	local height = 0
+	while node.name == "cannabis:canapa_ice" and height < 6 do
+		height = height + 1
+		pos.y = pos.y + 1
+		node = minetest.get_node(pos)
+	end
+			if height==6 then
+	minetest.set_node(pos, {name = "cannabis:flowering_ice"})
+		else
+	if height == 6 or node.name ~= "air" then
+		return
+	end
+	minetest.set_node(pos, {name = "cannabis:canapa_ice"})
+	return true
+end
+end
+end
 --___________________________________
 --function
+
+
+-- Dig upwards function for dig_up 2 elements
+--
+
+function cannabis.dig_up_ice(pos, node, digger)
+	if digger == nil then return end
+	local np = {x = pos.x, y = pos.y + 1, z = pos.z}
+	local nn = minetest.get_node(np)
+	if nn.name == node.name or nn.name == "cannabis:flowering_ice" then
+		minetest.node_dig(np, nn, digger)
+	end
+end
+
+
+--____________________________________
 
 
 function minetest.grow_canapa_ice(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
 	        if name ~= "default:sand" 
+	       --and name ~= "farming:soil_wet"
+	       --and name ~= "farming:soil"
 	       and name ~= "default:silver_sand"
 	       and name ~= "default:dirt_with_snow"
 	       and name ~= "default:permafrost_with_moss"
@@ -49,6 +96,17 @@ function minetest.grow_canapa_ice(pos, node)
 	if not minetest.find_node_near(pos, 5, {"default:snow"}) then
 		return
 	end
+	--[[if minetest.get_modpath("farming") then
+	 local name=minetest.get_node(pos).name 
+	if name ~= "farming:soil_wet" then 
+	return 
+	end
+	end
+	if minetest.get_modpath("farming") then
+	 if not minetest.find_node_near(pos, 5, {"default:water"}) then
+		return
+		end
+		end]]
 	pos.y = pos.y + 1
 	local height = 0
 	while node.name == "cannabis:canapa_ice" and height < 6 do

@@ -1,5 +1,7 @@
 default 
+tnt
 fire
+farming
  
 3d_armor?
 maptools?

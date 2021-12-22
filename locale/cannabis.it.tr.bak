@@ -70,14 +70,18 @@ Hemp red Flower=Fiore di canapa rossa
 
 ### joint.lua ###
 
-Ice flowering chopped=Infiorescenza canapa_ice tritata
-Joint of ice_weed lit= Sigaretta di canapa_ice accesa
-Joint of ice_weed unlit=Sigaretta di canapa spenta
-Joint of red_weed unlit=Sigaretta di canapa_rossa spenta
-Red flowering chopped= Infiorescenza canapa_rossa tritata
-Rolling paper with hemp leaves and ice flowering chopped =Cartina con infiorescenza di canapa_ice e foglie di canapa
-Rolling paper with hemp leaves and melted hash=Cartina con resina e foglie di canapa
-Rolling paper with hemp leaves and red flowering chopped = Cartina con infiorescenza di canapa_rossa e foglie di canapa
+Ice flowering chopped=
+Joint of ice_weed lit=
+Joint of ice_weed unlit=
+Joint of red_weed unlit=
+Red flowering chopped=
+Rolling paper with hemp leaves and ice flowering chopped =
+Rolling paper with hemp leaves and melted hash=
+Rolling paper with hemp leaves and red flowering chopped =
+
+### joint.lua ###
+### o_joint.lua ###
+
 Filter=Filtro
 Filters pack=Pacchetto di filtri
 Flowering chopped=Infiorescenza triturata
@@ -88,7 +92,7 @@ Joint of weed lit=Sigaretta di erba acceso
 Joint of weed unlit=Sigaretta di erba spenta
 Rolling paper=Cartine
 Rolling paper with hemp leaves and flowering chopped =Cartina con foglie e cime di canapa
-Lighter=Accendino
+lighter=
 
 ### node_ingot.lua ###
 
@@ -101,15 +105,15 @@ Fiber Ingot=Lingotto di fibra
 High Performance Block=Blocco ad alte prestazioni
 High Performance Block Hemp=Blocco alla fibra di canapa ad alte prestazioni
 High Performance Ingot=Lingotto alte prestazioni
-Ice Leaves Block=Blocco di foglie canapa_ice
+Ice Leaves Block=
 Leaves Block=Blocco di foglie
 Leaves Ingot=Lingotto di foglie
 Mixed HR Ingot=Lingotto mescola HR
 Red Leaves Block=Blocco di foglie rosse
 
+### o_joint.lua ###
 
-
-
+Rolling paper with hemp leaves melted hash=Cartina con foglie e resina sciolta di canapa
 
 ### tools.lua ###
 
@@ -136,4 +140,6 @@ Hemp Steel Shovel=Pala di canapa ed acciaio
 Hemp Steel Sword=Spada di canapa ed acciaio
 
 
+##### not used anymore #####
 
+Lighter=Accendino

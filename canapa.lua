@@ -26,16 +26,43 @@ minetest.register_node("cannabis:canapa", {
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
-		default.dig_up(pos, node, digger)
+	cannabis.dig_up(pos, node, digger)
+	--default.dig_up(pos, node, digger)
 	end,
 })
---function
+--function___________________________________________
+
+
+
+-- Dig upwards function for dig_up 2 elements
+--
+
+function cannabis.dig_up(pos, node, digger)
+	if digger == nil then return end
+	local np = {x = pos.x, y = pos.y + 1, z = pos.z}
+	local nn = minetest.get_node(np)
+	if nn.name == node.name or nn.name == "cannabis:flowering" then
+		minetest.node_dig(np, nn, digger)
+	end
+end
+
+
+
+
+--____________________________________________________
+
+
+
+
+
+
 
 function minetest.grow_canapa(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
 	if             name ~= "default:dirt_with_grass" 
-	           and name ~= "default:dirt" 
+	           and name ~= "default:dirt"
+	           and name ~= "farming:soil_wet" 
 	           and name ~= "default:dirt_with_rainforest_litter"
 	           and name ~= "default:dry_dirt"
 	           and name ~= "default:dirt_with_snow"

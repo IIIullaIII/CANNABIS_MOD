@@ -26,19 +26,33 @@ sounds ={"cannabis_canapa_s"},
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
-		default.dig_up(pos, node, digger)
+		cannabis.dig_up_red(pos, node, digger)
 	end,
 })
 --____________________________________
 
---___________________________________
---function
+--function___________________________________________
 
+
+
+-- Dig upwards function for dig_up 2 elements
+--
+
+function cannabis.dig_up_red(pos, node, digger)
+	if digger == nil then return end
+	local np = {x = pos.x, y = pos.y + 1, z = pos.z}
+	local nn = minetest.get_node(np)
+	if nn.name == node.name or nn.name == "cannabis:flowering_red" then
+		minetest.node_dig(np, nn, digger)
+	end
+end
+--______________________________________________________
 
 function minetest.grow_canapa_red(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
 	        if name ~= "default:sand" 
+	        and name ~= "farming:soil_wet"
 	       and name ~= "default:desert_sand"
 	       and name ~= "default:sandstone"  
 	       and name ~= "default:silver_sand"

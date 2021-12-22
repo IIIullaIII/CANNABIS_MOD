@@ -9,6 +9,12 @@
  Hemp Shield= Hanfschild
  Leggings= Hose
 
+### bag.lua ###
+
+Large Bob Bag= BOB Tasche Breit
+Medium Bob Bag= BOB Tasche Mittel
+Small Bob Bag= BOB Tasche Klein
+
 ### canapa.lua ###
 
 Hemp=Hanf
@@ -17,7 +23,15 @@ Hemp (flowering)=Hanf (blühend)
 Hemp (seedling)=Hanf (Sämling)
 Hemp (sproutling)=Hanf (sprießend)
 
-### canapa_rossa.lua ###
+### canapa_ice.lua ###
+
+Hemp (Ice flowering)=Gletscherhanf
+Hemp ice= Gletscherhanf (blühend)
+Hemp ice (climbing plant)=Gletscherhanf (kletternde Pflanze)
+Hemp ice (sproutling)=Gletscherhanf (sprießend)
+Hemp ice(seedling)=Gletscherhanf (Sämling)
+
+### canapa_red.lua ###
 
 Hemp (Red flowering)=Hanf (Rot blühend)
 Hemp red=Roter Hanf
@@ -25,10 +39,22 @@ Hemp red (climbing plant)=Roter Hanf (kletternde Pflanze)
 Hemp red (sproutling)=Roter Hanf (Sämling)
 Hemp red(seedling)=Roter Hanf (Sprießend)
 
+### craftice.lua ###
+
+Hemp ice Flower= Gletscherhanfblume
+
+### craftice.lua ###
+### craftitem.lua ###
+### craftred.lua ###
+
+Hemp Leaves=Hanfblätter
+Hemp Seed=Hanfsamen
+
 ### craftitem.lua ###
 
 BioFuel=BioKraftstoff
 Bread=Brot
+Cloth=
 Fiber=Faser
 Flour=Mehl
 Hemp Flower=Hanfblume
@@ -38,17 +64,23 @@ Hemp Resin=Hanfharz
 Paper=Papier
 Plastic=Plastik
 
-### craftitem.lua ###
-### craftred.lua ###
-
-Hemp Leaves=Hanfblätter
-Hemp Seed=Hanfsamen
-
 ### craftred.lua ###
 
 Hemp red Flower=Roter Hanf Blüte
 
 ### joint.lua ###
+
+Ice flowering chopped=
+Joint of ice_weed lit=
+Joint of ice_weed unlit=
+Joint of red_weed unlit=
+Red flowering chopped=
+Rolling paper with hemp leaves and ice flowering chopped =
+Rolling paper with hemp leaves and melted hash=
+Rolling paper with hemp leaves and red flowering chopped =
+
+### joint.lua ###
+### o_joint.lua ###
 
 Filter=Filter
 Filters pack=Filterpaket
@@ -58,10 +90,9 @@ Joint of hash lit=Haschisch Joint angezündet
 Joint of hash unlit=Haschisch Joint nicht angezündet
 Joint of weed lit=Joint aus Gras angezündet
 Joint of weed unlit=Joint aus Gras nicht angezündet
-Lighter=Feuerzeug
 Rolling paper=Zigarettenpapier
 Rolling paper with hemp leaves and flowering chopped =Zigarettenpapier mit Hanfblättern und gehäckselten Blüten
-Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
+lighter=
 
 ### node_ingot.lua ###
 
@@ -74,14 +105,18 @@ Fiber Ingot=Faserbarren
 High Performance Block=Hochwertiger Block
 High Performance Block Hemp=Hochwertiger Hanfblock
 High Performance Ingot=Hochwertiger Barren
+Ice Leaves Block=
 Leaves Block=Blätterblock
 Leaves Ingot=Blätterbarren
 Mixed HR Ingot=Gemischter HR Barren
 Red Leaves Block=Roter Blätterblock
 
+### o_joint.lua ###
+
+Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
+
 ### tools.lua ###
 
-Hemp Admin High Performance Sword=Hanf Admin hochwertiges Schwert
 Hemp Adminh Pickaxe=Hanf Admin hochwertige Spitzhacke
 Hemp Bronze Axe= Hanf Bronze Axt
 Hemp Bronze Pickaxe=Hanf Bronze Spitzhacke
@@ -103,3 +138,9 @@ Hemp Steel Axe=Hanf Eisen Axt
 Hemp Steel Pickaxe=Hanf Eisen Spitzhacke
 Hemp Steel Shovel=Hanf Eisen Schaufel
 Hemp Steel Sword=Hanf Eisen Schwert
+
+
+##### not used anymore #####
+
+Lighter=Feuerzeug
+Hemp Admin High Performance Sword=Hanf Admin hochwertiges Schwert

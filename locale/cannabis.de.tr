@@ -74,14 +74,21 @@ Filter=Filter
 Filters pack=Filterpaket
 Flowering chopped=blühend gehäckselt
 Hash melted=Haschisch geschmolzen
+Ice flowering chopped=
 Joint of hash lit=Haschisch Joint angezündet
 Joint of hash unlit=Haschisch Joint nicht angezündet
+Joint of ice_weed lit=
+Joint of ice_weed unlit=
+Joint of red_weed unlit=
 Joint of weed lit=Joint aus Gras angezündet
 Joint of weed unlit=Joint aus Gras nicht angezündet
 Lighter=Feuerzeug
+Red flowering chopped=
 Rolling paper=Zigarettenpapier
 Rolling paper with hemp leaves and flowering chopped =Zigarettenpapier mit Hanfblättern und gehäckselten Blüten
-Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
+Rolling paper with hemp leaves and ice flowering chopped =
+Rolling paper with hemp leaves and melted hash=
+Rolling paper with hemp leaves and red flowering chopped =
 
 ### node_ingot.lua ###
 
@@ -94,6 +101,7 @@ Fiber Ingot=Faserbarren
 High Performance Block=Hochwertiger Block
 High Performance Block Hemp=Hochwertiger Hanfblock
 High Performance Ingot=Hochwertiger Barren
+Ice Leaves Block=
 Leaves Block=Blätterblock
 Leaves Ingot=Blätterbarren
 Mixed HR Ingot=Gemischter HR Barren
@@ -126,4 +134,5 @@ Hemp Steel Sword=Hanf Eisen Schwert
 
 ##### not used anymore #####
 
+Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
 Hemp Admin High Performance Sword=Hanf Admin hochwertiges Schwert

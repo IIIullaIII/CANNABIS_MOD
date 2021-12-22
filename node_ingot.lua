@@ -98,6 +98,13 @@ minetest.register_node("cannabis:cannabis_foglie_red_block", {
 	groups = {cracky=1, level=2},
 	sounds = {"cannabis_canapa_s3"}
 })
+minetest.register_node("cannabis:cannabis_foglie_ice_block", {
+	description = S("Ice Leaves Block"),
+	tiles = { "cannabis_foglie_ice_block.png" },
+	is_ground_content = false,
+	groups = {cracky=1, level=2},
+	sounds = {"cannabis_canapa_s3"}
+})
 minetest.register_node("cannabis:cannabis_tessuto_block", {
 	description = S("Fabric Block"),
 	tiles = { "cannabis_tessuto_block.png" },

@@ -38,6 +38,10 @@ minetest.register_craftitem("cannabis:canapa_bread", {
 minetest.register_craftitem("cannabis:canapa_seed", {
 	description = S("Hemp Seed"),
 	inventory_image = "cannabis_canapa_seed.png",
+	groups = {seed = 2, food_artichoke = 1, flammable = 2},
+	on_place = function(itemstack, placer, pointed_thing)
+		return farming.place_seed(itemstack, placer, pointed_thing, "cannabis:canapa")
+	end,
 	on_use = minetest.item_eat(10),
 })
 
@@ -72,7 +76,7 @@ minetest.register_craftitem("cannabis:canapa_glue", {
 })
 
 --crafting
-
+--____________________________________________________________________________oil_______________________________________
 minetest.register_craft({
 	output = "cannabis:canapa_oil 4 ",
 	recipe = {
@@ -81,7 +85,7 @@ minetest.register_craft({
                 {"cannabis:canapa_flower","cannabis:canapa_raisin","cannabis:canapa_flower"},
 	}
 })
-
+--________________________________________________________________________fuel________________________________________________
 minetest.register_craft({
 	output = "cannabis:canapa_fuel 4 ",
 	recipe ={ 
@@ -90,7 +94,17 @@ minetest.register_craft({
         {"cannabis:canapa","cannabis:canapa",""},
         }
 })
-
+minetest.register_craft({
+	type = "fuel",        
+	recipe = "cannabis:canapa",
+	burntime = 15,
+})
+minetest.register_craft({
+	type = "fuel",        
+	recipe = "cannabis:canapa_fuel",
+	burntime = 70,
+})
+--_______________________________________________________________________plastic__________________________________________________
 minetest.register_craft({
 	output = "cannabis:canapa_plastic 8 ",
 	recipe ={ 
@@ -98,9 +112,8 @@ minetest.register_craft({
         {"cannabis:canapa","cannabis:canapa","cannabis:canapa"},
         }
 })
-
-
-          minetest.register_craft({
+--________________________________________________________________________glue_____________________________________________________
+minetest.register_craft({
 	output = "cannabis:canapa_glue 10 ",
 	recipe = {
 		{"cannabis:canapa_plastic","cannabis:canapa_raisin","cannabis:canapa_plastic"},
@@ -108,15 +121,32 @@ minetest.register_craft({
                 {"cannabis:canapa_plastic","cannabis:canapa_raisin","cannabis:canapa_plastic"},
 	}
 })
-   minetest.register_craft({
-	output = "cannabis:climbing ",
+--________________________________________________________________________climbing___________________________________________________
+minetest.register_craft({
+	output = "cannabis:climbing",
 	recipe = {
 		{"cannabis:canapa_leaves","cannabis:canapa_leaves","cannabis:canapa_leaves"},
                 {"cannabis:canapa_leaves","cannabis:canapa_leaves","cannabis:canapa_leaves"},
                 {"cannabis:canapa_leaves","cannabis:canapa_leaves","cannabis:canapa_leaves"},
 	}
+})
+
+--_____________________________________________________________________________CRAFT BLOCK______________________________________________
+
+
+--________________________________________________________________________foglie_____________________________________________________
+
+minetest.register_craft({
+	output = "cannabis:cannabis_foglie_block 5 ",
+	recipe = {
+		{"cannabis:climbing","cannabis:climbing","cannabis:climbing"},
+	    {"cannabis:climbing","cannabis:climbing","cannabis:climbing"},
+	 	{"cannabis:climbing","cannabis:climbing","cannabis:climbing"},
+	}
 })   
-          minetest.register_craft({
+   
+--_______________________________________________________________________hp_block_canapa_______________________________________________
+minetest.register_craft({
 	output = "cannabis:hp_block_canapa 4 ",
 	recipe = {
 		{"cannabis:canapa_fiber","cannabis:canapa_glue","cannabis:canapa_fiber"},
@@ -125,8 +155,11 @@ minetest.register_craft({
 	}
 })
 
-  
-        minetest.register_craft({
+
+
+--____________________________________________________________________________________________________________
+--________________________________________________________________________resina (fumo)_______________________
+minetest.register_craft({
 	output = "cannabis:canapa_raisin 3 ",
 	recipe = {
 		{"","",""},
@@ -134,9 +167,7 @@ minetest.register_craft({
                 {"cannabis:canapa_flower","cannabis:canapa_flower",""},
 	}
 })
-        
-
-
+--________________________________________________________________________tessuto______________________________
 minetest.register_craft({
 	output = "cannabis:canapa_cloth 3 ",
 	recipe = {
@@ -144,10 +175,7 @@ minetest.register_craft({
         {"cannabis:canapa_fiber", "cannabis:canapa_fiber", "cannabis:canapa_fiber"},
 	}
 })
-
-
-
-
+--________________________________________________________________________fiber_________________________________
 minetest.register_craft({
 	output = "cannabis:canapa_fiber 10 ",
 	recipe = {
@@ -156,7 +184,7 @@ minetest.register_craft({
                 {"cannabis:canapa","",""},
 	}
 })
-
+--_________________________________________________________________________paper_________________________________
 minetest.register_craft({
 	output = "cannabis:canapa_paper 6 ",
 	recipe = {
@@ -164,41 +192,26 @@ minetest.register_craft({
                 },
 	}
 })
-
 minetest.register_craft({
-	type = "fuel",        
-	recipe = "cannabis:canapa",
-	burntime = 15,
+	output = "default:paper 10 ",
+	recipe = {
+		{"cannabis:canapa_paper"},
+	}
 })
-
-minetest.register_craft({
-	type = "fuel",        
-	recipe = "cannabis:canapa_fuel",
-	burntime = 70,
-})
-
-
-
+--_________________________________________________________________________flour__________________________________
 minetest.register_craft({
 	type = "shapeless",
 	output = "cannabis:canapa_flour 4",
 	recipe = {"cannabis:canapa_seed", "cannabis:canapa_seed", "cannabis:canapa_seed", "cannabis:canapa_seed"}
 })
-
+--_________________________________________________________________________bread___________________________________
 minetest.register_craft({
 	type = "cooking",
 	cooktime = 10,
 	output = "cannabis:canapa_bread",
 	recipe = "cannabis:canapa_flour"
 })
-   minetest.register_craft({
-	output = "cannabis:cannabis_foglie_block 5 ",
-	recipe = {
-		{"cannabis:climbing","cannabis:climbing","cannabis:climbing"},
-	    {"cannabis:climbing","cannabis:climbing","cannabis:climbing"},
-	 	{"cannabis:climbing","cannabis:climbing","cannabis:climbing"},
-	}
-})   
+
 
 minetest.register_craft({
 	type = "shapeless",
@@ -212,7 +225,7 @@ minetest.register_craft({
 	recipe = {"cannabis:fibra_ingot", "cannabis:foglie_ingot", "cannabis:tessuto_ingot"}
 })
 
--- register bag crafts
+--____________________________________________________________________________ register bag crafts_____________________________________
 if minetest.get_modpath("unified_inventory") ~= nil then
 	minetest.register_craft({
 		output = "cannabis:bag_bob_small",
