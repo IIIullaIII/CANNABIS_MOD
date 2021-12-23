@@ -1,4 +1,10 @@
 # cannabis
+Version 22.12.2021                                                                                                                                          
+Changelog :                                                                                                                                                   
+. Fixed error for the inflorescence that was not collected                                                                                                     
+. Additional compatibility with farming, now the plants can be grown in the garden, planting the seeds                                                         
+. Added effects if joint is used                                                                                                                                
+
 
 IT)
 Questa mod punta ad illustrare la vasta possibilità e settori di utilizzo  della canapa , la sua importanza nei vari settori medici culinari industriali bioenergetici  ricreativi etc 
