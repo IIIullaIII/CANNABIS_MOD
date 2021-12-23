@@ -1,9 +1,9 @@
 # cannabis
-Version 22.12.2021
-Changelog :
-. Fixed error for the inflorescence that was not collected
-. Additional compatibility with farming, now the plants can be grown in the garden, planting the seeds
-. Added effects if joint is used
+Version 22.12.2021                                                                                                                                          
+Changelog :                                                                                                                                                   
+. Fixed error for the inflorescence that was not collected                                                                                                     
+. Additional compatibility with farming, now the plants can be grown in the garden, planting the seeds                                                         
+. Added effects if joint is used                                                                                                                                
 
 
 IT)
