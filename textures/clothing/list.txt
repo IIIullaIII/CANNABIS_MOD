@@ -1,0 +1,11 @@
+-shorts
+-shortshirt
+-skullcap
+-undershirt
+-cape
+hood_mask
+pants
+-shirt
+-glove_left
+-glove_right
+-gloves

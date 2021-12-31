@@ -1,132 +1,98 @@
 # textdomain: cannabis
-
-
-### armor.lua ###
-
- Boots=
- Chestplate=
  Helmet=
- Hemp Shield=
+ Chestplate=
  Leggings=
-
-### bag.lua ###
-
-Large Bob Bag=
-Medium Bob Bag=
+ Boots=
+ Hemp Shield=
 Small Bob Bag=
-
-### canapa.lua ###
-
+Medium Bob Bag=
+Large Bob Bag=
 Hemp=
-Hemp (climbing plant)=
-Hemp (flowering)=
 Hemp (seedling)=
 Hemp (sproutling)=
-
-### canapa_ice.lua ###
-
-Hemp (Ice flowering)=
+Hemp (flowering)=
+Hemp (climbing plant)=
 Hemp ice=
-Hemp ice (climbing plant)=
-Hemp ice (sproutling)=
 Hemp ice(seedling)=
-
-### canapa_red.lua ###
-
-Hemp (Red flowering)=
+Hemp ice (sproutling)=
+Hemp ice (climbing plant)=
+Hemp (Ice flowering)=
 Hemp red=
-Hemp red (climbing plant)=
-Hemp red (sproutling)=
 Hemp red(seedling)=
-
-### craftice.lua ###
-
+Hemp red (sproutling)=
+Hemp red (climbing plant)=
+Hemp (Red flowering)=
 Hemp ice Flower=
-
-### craftice.lua ###
-### craftitem.lua ###
-### craftred.lua ###
-
-Hemp Leaves=
 Hemp Seed=
-
-### craftitem.lua ###
-
-BioFuel=
-Bread=
-Cloth=
+Hemp Leaves=
 Fiber=
-Flour=
-Hemp Flower=
-Hemp Glue=
-Hemp Oil=
-Hemp Resin=
-Paper=
+BioFuel=
 Plastic=
-
-### craftred.lua ###
-
+Cloth=
+Paper=
+Flour=
+Bread=
+Hemp Flower=
+Hemp Resin=
+Hemp Oil=
+Hemp Glue=
 Hemp red Flower=
-
-### joint.lua ###
-
-Filter=
-Filters pack=
-Flowering chopped=
-Hash melted=
-Ice flowering chopped=
 Joint of hash lit=
 Joint of hash unlit=
-Joint of ice_weed lit=
-Joint of ice_weed unlit=
-Joint of red_weed unlit=
-Joint of weed lit=
 Joint of weed unlit=
-Lighter=
+Joint of red_weed unlit=
+Joint of ice_weed unlit=
+Half Joint of hash lit=
+Joint of weed lit=
+Half Joint of weed lit=
+Joint of red weed lit=
+Half Joint of red weed lit=
+Joint of ice_weed lit=
+Half Joint of ice_weed lit=
+Flowering chopped=
 Red flowering chopped=
+Ice flowering chopped=
+Hash melted=
 Rolling paper=
 Rolling paper with hemp leaves and flowering chopped =
+Rolling paper with hemp leaves and red flowering chopped =
 Rolling paper with hemp leaves and ice flowering chopped =
 Rolling paper with hemp leaves and melted hash=
-Rolling paper with hemp leaves and red flowering chopped =
-
-### node_ingot.lua ###
-
-Adminh Block=
-Adminh Ingot=
-Fabric Block=
-Fabric Ingot=
-Fiber Block=
-Fiber Ingot=
-High Performance Block=
-High Performance Block Hemp=
-High Performance Ingot=
-Ice Leaves Block=
-Leaves Block=
-Leaves Ingot=
+Filters pack=
+Filter=
+Lighter=
 Mixed HR Ingot=
+Fiber Ingot=
+Leaves Ingot=
+High Performance Ingot=
+Fabric Ingot=
+Adminh Ingot=
+High Performance Block Hemp=
+Leaves Block=
 Red Leaves Block=
-
-### tools.lua ###
-
-Hemp Adminh Pickaxe=
-Hemp Bronze Axe=
-Hemp Bronze Pickaxe=
-Hemp Bronze Shovel=
-Hemp Bronze Sword=
-Hemp Diamond Axe=
-Hemp Diamond Pickaxe=
-Hemp Diamond Shovel=
-Hemp Diamond Sword=
-Hemp High Performance Axe=
-Hemp High Performance Sword=
-Hemp High Pickaxe=
-Hemp High Shovel=
-Hemp Mese Axe=
-Hemp Mese Pickaxe=
-Hemp Mese Shovel=
-Hemp Mese Sword=
-Hemp Steel Axe=
+Ice Leaves Block=
+Fabric Block=
+High Performance Block=
+Fiber Block=
+Adminh Block=
 Hemp Steel Pickaxe=
+Hemp Bronze Pickaxe=
+Hemp Mese Pickaxe=
+Hemp Diamond Pickaxe=
+Hemp High Pickaxe=
+Hemp Adminh Pickaxe=
+Hemp High Shovel=
 Hemp Steel Shovel=
+Hemp Bronze Shovel=
+Hemp Mese Shovel=
+Hemp Diamond Shovel=
+Hemp Steel Axe=
+Hemp Bronze Axe=
+Hemp Mese Axe=
+Hemp Diamond Axe=
+Hemp High Performance Axe=
 Hemp Steel Sword=
+Hemp Bronze Sword=
+Hemp Mese Sword=
+Hemp Diamond Sword=
+Hemp High Performance Sword=

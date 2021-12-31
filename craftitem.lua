@@ -1,5 +1,5 @@
--- get Boilerplate for Translations
 local S = cannabis.S
+local path = cannabis.path
 
 --craft item :fiber, fuel, plastic, paper,flower,oil,flour,bred,resin,seed,leaves
 

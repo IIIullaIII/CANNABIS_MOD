@@ -1,146 +1,100 @@
 # textdomain: cannabis
 
-
-### armor.lua ###
-
- Boots= Stiefel
- Chestplate= Brustpanzer
  Helmet= Helm
- Hemp Shield= Hanfschild
+ Chestplate= Brustpanzer
  Leggings= Hose
-
-### bag.lua ###
-
-Large Bob Bag= BOB Tasche Breit
-Medium Bob Bag= BOB Tasche Mittel
+ Boots= Stiefel
+ Hemp Shield= Hanfschild
 Small Bob Bag= BOB Tasche Klein
-
-### canapa.lua ###
-
+Medium Bob Bag= BOB Tasche Mittel
+Large Bob Bag= BOB Tasche Breit
 Hemp=Hanf
-Hemp (climbing plant)=Hanf (kletternde Pflanze)
-Hemp (flowering)=Hanf (blühend)
 Hemp (seedling)=Hanf (Sämling)
 Hemp (sproutling)=Hanf (sprießend)
-
-### canapa_ice.lua ###
-
-Hemp (Ice flowering)=Gletscherhanf
+Hemp (flowering)=Hanf (blühend)
+Hemp (climbing plant)=Hanf (kletternde Pflanze)
 Hemp ice= Gletscherhanf (blühend)
-Hemp ice (climbing plant)=Gletscherhanf (kletternde Pflanze)
-Hemp ice (sproutling)=Gletscherhanf (sprießend)
 Hemp ice(seedling)=Gletscherhanf (Sämling)
-
-### canapa_red.lua ###
-
-Hemp (Red flowering)=Hanf (Rot blühend)
+Hemp ice (sproutling)=Gletscherhanf (sprießend)
+Hemp ice (climbing plant)=Gletscherhanf (kletternde Pflanze)
+Hemp (Ice flowering)=Gletscherhanf
 Hemp red=Roter Hanf
-Hemp red (climbing plant)=Roter Hanf (kletternde Pflanze)
-Hemp red (sproutling)=Roter Hanf (Sämling)
 Hemp red(seedling)=Roter Hanf (Sprießend)
-
-### craftice.lua ###
-
+Hemp red (sproutling)=Roter Hanf (Sämling)
+Hemp red (climbing plant)=Roter Hanf (kletternde Pflanze)
+Hemp (Red flowering)=Hanf (Rot blühend)
 Hemp ice Flower= Gletscherhanfblume
-
-### craftice.lua ###
-### craftitem.lua ###
-### craftred.lua ###
-
-Hemp Leaves=Hanfblätter
 Hemp Seed=Hanfsamen
-
-### craftitem.lua ###
-
-BioFuel=BioKraftstoff
-Bread=Brot
-Cloth=
+Hemp Leaves=Hanfblätter
 Fiber=Faser
-Flour=Mehl
-Hemp Flower=Hanfblume
-Hemp Glue=Hanfkleber
-Hemp Oil=Hanföl
-Hemp Resin=Hanfharz
-Paper=Papier
+BioFuel=BioKraftstoff
 Plastic=Plastik
-
-### craftred.lua ###
-
+Cloth=
+Paper=Papier
+Flour=Mehl
+Bread=Brot
+Hemp Flower=Hanfblume
+Hemp Resin=Hanfharz
+Hemp Oil=Hanföl
+Hemp Glue=Hanfkleber
 Hemp red Flower=Roter Hanf Blüte
-
-### joint.lua ###
-
-Ice flowering chopped=
-Joint of ice_weed lit=
-Joint of ice_weed unlit=
-Joint of red_weed unlit=
-Red flowering chopped=
-Rolling paper with hemp leaves and ice flowering chopped =
-Rolling paper with hemp leaves and melted hash=
-Rolling paper with hemp leaves and red flowering chopped =
-
-### joint.lua ###
-### o_joint.lua ###
-
-Filter=Filter
-Filters pack=Filterpaket
-Flowering chopped=blühend gehäckselt
-Hash melted=Haschisch geschmolzen
 Joint of hash lit=Haschisch Joint angezündet
 Joint of hash unlit=Haschisch Joint nicht angezündet
-Joint of weed lit=Joint aus Gras angezündet
 Joint of weed unlit=Joint aus Gras nicht angezündet
+Joint of red_weed unlit=
+Joint of ice_weed unlit=
+Joint of weed lit=Joint aus Gras angezündet
+Joint of ice_weed lit=
+Flowering chopped=blühend gehäckselt
+Red flowering chopped=
+Ice flowering chopped=
+Hash melted=Haschisch geschmolzen
 Rolling paper=Zigarettenpapier
 Rolling paper with hemp leaves and flowering chopped =Zigarettenpapier mit Hanfblättern und gehäckselten Blüten
-lighter=
-
-### node_ingot.lua ###
-
-Adminh Block=Adminh Block
-Adminh Ingot=Adminh Barren
-Fabric Block=Stoffblock
-Fabric Ingot=Stoffbarren
-Fiber Block=Faserblock
-Fiber Ingot=Faserbarren
-High Performance Block=Hochwertiger Block
-High Performance Block Hemp=Hochwertiger Hanfblock
-High Performance Ingot=Hochwertiger Barren
-Ice Leaves Block=
-Leaves Block=Blätterblock
-Leaves Ingot=Blätterbarren
+Rolling paper with hemp leaves and red flowering chopped =
+Rolling paper with hemp leaves and ice flowering chopped =
+Rolling paper with hemp leaves and melted hash=
+Filters pack=Filterpaket
+Filter=Filter
+Lighter=Feuerzeug
 Mixed HR Ingot=Gemischter HR Barren
+Fiber Ingot=Faserbarren
+Leaves Ingot=Blätterbarren
+High Performance Ingot=Hochwertiger Barren
+Fabric Ingot=Stoffbarren
+Adminh Ingot=Adminh Barren
+High Performance Block Hemp=Hochwertiger Hanfblock
+Leaves Block=Blätterblock
 Red Leaves Block=Roter Blätterblock
-
-### o_joint.lua ###
-
-Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
-
-### tools.lua ###
-
-Hemp Adminh Pickaxe=Hanf Admin hochwertige Spitzhacke
-Hemp Bronze Axe= Hanf Bronze Axt
-Hemp Bronze Pickaxe=Hanf Bronze Spitzhacke
-Hemp Bronze Shovel=Hanf Bronze Schaufel
-Hemp Bronze Sword=Hanf Bronze Schaufel
-Hemp Diamond Axe=Hanf Diamant Axt
-Hemp Diamond Pickaxe=Hanf Diamant Spitzhacke
-Hemp Diamond Shovel=Hanf Diamant Schaufel
-Hemp Diamond Sword=Hanf Diamant Schwert
-Hemp High Performance Axe=Hanf Hochwertige Axt
-Hemp High Performance Sword=Hanf Hochwertiges Schwert
-Hemp High Pickaxe=Hanf hochwertige Spitzhacke
-Hemp High Shovel=Hanf hochwertige Schaufel
-Hemp Mese Axe=Hanf Mese Axt
-Hemp Mese Pickaxe=Hanf Mese Spitzhacke
-Hemp Mese Shovel=Hanf Mese Schaufel
-Hemp Mese Sword=Hanf Mese Schwert
-Hemp Steel Axe=Hanf Eisen Axt
+Ice Leaves Block=
+Fabric Block=Stoffblock
+High Performance Block=Hochwertiger Block
+Fiber Block=Faserblock
+Adminh Block=Adminh Block
 Hemp Steel Pickaxe=Hanf Eisen Spitzhacke
+Hemp Bronze Pickaxe=Hanf Bronze Spitzhacke
+Hemp Mese Pickaxe=Hanf Mese Spitzhacke
+Hemp Diamond Pickaxe=Hanf Diamant Spitzhacke
+Hemp High Pickaxe=Hanf hochwertige Spitzhacke
+Hemp Adminh Pickaxe=Hanf Admin hochwertige Spitzhacke
+Hemp High Shovel=Hanf hochwertige Schaufel
 Hemp Steel Shovel=Hanf Eisen Schaufel
+Hemp Bronze Shovel=Hanf Bronze Schaufel
+Hemp Mese Shovel=Hanf Mese Schaufel
+Hemp Diamond Shovel=Hanf Diamant Schaufel
+Hemp Steel Axe=Hanf Eisen Axt
+Hemp Bronze Axe= Hanf Bronze Axt
+Hemp Mese Axe=Hanf Mese Axt
+Hemp Diamond Axe=Hanf Diamant Axt
+Hemp High Performance Axe=Hanf Hochwertige Axt
 Hemp Steel Sword=Hanf Eisen Schwert
+Hemp Bronze Sword=Hanf Bronze Schaufel
+Hemp Mese Sword=Hanf Mese Schwert
+Hemp Diamond Sword=Hanf Diamant Schwert
+Hemp High Performance Sword=Hanf Hochwertiges Schwert
 
 
 ##### not used anymore #####
 
-Lighter=Feuerzeug
+Rolling paper with hemp leaves melted hash=Zigarettenpapier mit Hanfblättern und geschmolzenem Haschisch
 Hemp Admin High Performance Sword=Hanf Admin hochwertiges Schwert

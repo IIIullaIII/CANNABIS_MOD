@@ -1,5 +1,6 @@
 -- get Boilerplate for Translations
 local S = cannabis.S
+local path = cannabis.path
 
 	--[[minetest.register_craftitem("cannabis:joint_fumo_acceso", {
 	description = S("Joint of hash lit"),
@@ -85,7 +86,7 @@ local p = player:get_pos()
 
         
    	minetest.register_craftitem("cannabis:joint_fumo_acceso", {
-    description = "Joint of hash lit",
+    description = S("Joint of hash lit"),
     inventory_image = "joint_joint_fac.png",
     stack_max = 1,
     on_use = function(itemstack,player,pointed_thing)
@@ -119,7 +120,7 @@ local p = player:get_pos()
 --_______________________________________________________________________FUMO ACCESO CONSUMATO_______________________________________________________
                  
  minetest.register_craftitem("cannabis:joint_fumo_acceso_m", {
-    description = "Joint of hash lit",
+    description = S("Half Joint of hash lit"),
     inventory_image = "joint_joint_fac_m.png",
     stack_max = 1,
     on_use = function(itemstack,player,pointed_thing)
@@ -188,7 +189,7 @@ local p = player:get_pos()
 --_______________________________________________________________________E. VERDE CONSUMATA_______________________________________
             
 	   minetest.register_craftitem("cannabis:joint_erba_acceso_m", {
-    description = "Joint of weed lit",
+    description = S("Half Joint of weed lit"),
     inventory_image = "joint_joint_cac_m.png",
     stack_max = 1,
     on_use = function(itemstack,player,pointed_thing)
@@ -221,7 +222,7 @@ local p = player:get_pos()
 --_______________________________________________________________________E. ROSSA______________________________________
 
 	   minetest.register_craftitem("cannabis:joint_erba_rossa_acceso", {
-	description = S("Joint of weed lit"),
+	description = S("Joint of red weed lit"),
 	inventory_image = "joint_joint_cacr.png",
     stack_max = 1 ,
     on_use =function(itemstack,player,pointed_thing)
@@ -255,7 +256,7 @@ local p = player:get_pos()
 --_______________________________________________________________________E.ROSSA ACCESA CONSUMATA_______________________
             
 	minetest.register_craftitem("cannabis:joint_erba_rossa_acceso_m", {
-    description = "Joint of weed lit",
+    description = S("Half Joint of red weed lit"),
     inventory_image = "joint_joint_cacr_m.png",
     stack_max = 1,
     on_use = function(itemstack,player,pointed_thing)
@@ -322,7 +323,7 @@ local p = player:get_pos()
 --_______________________________________________________________________E. ICE ACCESA CONSUMATA_______________________________
             
 	  minetest.register_craftitem("cannabis:joint_erba_ice_acceso_m", {
-    description = "Joint of ice_weed lit",
+    description = S("Half Joint of ice_weed lit"),
     inventory_image = "joint_joint_caci_m.png",
     stack_max = 1,
     on_use = function(itemstack,player,pointed_thing)

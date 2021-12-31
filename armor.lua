@@ -1,7 +1,7 @@
 -- get Boilerplate for Translations
-local S = cannabis.S
 
-      --armor
+local S = cannabis.S
+local path = cannabis.path
         
 if minetest.get_modpath("cannabis") then
 	local stats = {
