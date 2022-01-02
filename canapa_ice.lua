@@ -84,7 +84,7 @@ function minetest.grow_canapa_ice(pos, node)
 	pos.y = pos.y - 1
 	local name = minetest.get_node(pos).name
 	        if name ~= "default:sand" 
-	       --and name ~= "farming:soil_wet"
+	       and name ~= "farming:soil_wet"
 	       --and name ~= "farming:soil"
 	       and name ~= "default:silver_sand"
 	       and name ~= "default:dirt_with_snow"
