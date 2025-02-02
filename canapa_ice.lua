@@ -96,17 +96,7 @@ function minetest.grow_canapa_ice(pos, node)
 	if not minetest.find_node_near(pos, 5, {"default:snow"}) then
 		return
 	end
-	--[[if minetest.get_modpath("farming") then
-	 local name=minetest.get_node(pos).name 
-	if name ~= "farming:soil_wet" then 
-	return 
-	end
-	end
-	if minetest.get_modpath("farming") then
-	 if not minetest.find_node_near(pos, 5, {"default:water"}) then
-		return
-		end
-		end]]
+	
 	pos.y = pos.y + 1
 	local height = 0
 	while node.name == "cannabis:canapa_ice" and height < 6 do
@@ -159,7 +149,7 @@ if minetest.get_modpath("default") then
 			scale = 0.7,
 			spread = {x = 100, y =100, z =100},
 			seed = 354,
-			octaves = 1,
+			octaves = 3,
 			persist = 1
 		},
         biomes = {
@@ -171,7 +161,7 @@ if minetest.get_modpath("default") then
                    "tundra_beach",
                    "delicious_forest_shore",
                    "floatland_coniferous_forest"},
-		y_min = 6,
+		y_min = 0,
 		y_max = 31000,
 		decoration = "cannabis:canapa_ice",
 		height = 2,

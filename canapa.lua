@@ -22,12 +22,12 @@ minetest.register_node("cannabis:canapa", {
    items = {
       {items = {"cannabis:canapa"}, rarity = 1 },
       {items = {"cannabis:canapa_leaves"}, rarity = 1 },
-     -- {items = {"cannabis:canapa_seed"}, rarity = 1 },
+     
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
 	cannabis.dig_up(pos, node, digger)
-	--default.dig_up(pos, node, digger)
+	
 	end,
 })
 --function___________________________________________
@@ -82,7 +82,7 @@ function minetest.grow_canapa(pos, node)
 	end
 		if height==6 then
 	minetest.set_node(pos, {name = "cannabis:flowering"})
-	--minetest.swap_node(pos, {name = "grow:liva2" })
+	
 	else
 	if height == 6 or node.name ~= "air" then
 		return
@@ -110,31 +110,7 @@ minetest.register_abm({
 })
 if minetest.get_modpath("default") then
 
---[[minetest.register_biome({
-		name = "canapa_swamp",
-		--node_dust = "",
-		node_top ={ "default:dirt_with_grass",
-		             "default:dirt_with_grass" ,
-	                "default:dirt" ,
-	                "default:dirt_with_rainforest_litter",
-	                "default:dry_dirt",
-	                "default:dirt_with_snow",
-	                "default:dirt_with_coniferous_litter"},
-		depth_top = 1,
-		node_filler = "default:dirt",
-		depth_filler = 3,
-		--node_stone = "",
-		--node_water_top = "",
-		--depth_water_top = ,
-		--node_water = "",
-		--node_river_water = "",
-		node_riverbed = "default:sand",
-		depth_riverbed = 2,
-		y_min = 1,
-		y_max = 2,
-		heat_point = 89,
-		humidity_point = 22,
-	})]]
+
     
     
 	
@@ -143,7 +119,7 @@ if minetest.get_modpath("default") then
 		place_on = {"default:dirt_with_grass" ,
 	                "default:dirt" ,
 	                "default:dirt_with_rainforest_litter",
-	                "default:dry_dirt",
+	                --"default:dry_dirt",
 	                "default:dirt_with_snow",
 	                "default:dirt_with_coniferous_litter" },
 		sidelen = 16,
@@ -156,8 +132,7 @@ if minetest.get_modpath("default") then
 			persist = 1.5
 		},
 		fill_ratio = 0.03,
-        biomes = {--"canapa_swamp",
-                   "cold_desert",
+        biomes = { "cold_desert",
                    "rainforest",
                    "grassland_dunes",
                    "coniferous_forest_dunes",
@@ -184,7 +159,7 @@ if minetest.get_modpath("default") then
 	})
 
 
-	minetest.register_decoration({
+--[[	minetest.register_decoration({
 		deco_type = "schematic",
 		place_on = {"default:dirt_with_grass",
 		            "default:dirt",
@@ -193,10 +168,10 @@ if minetest.get_modpath("default") then
 		noise_params = {
 			offset = -0.3,
 			scale = 0.7,
-			spread = {x = 100, y = 100, z = 100},
-			seed = 354,
+			spread = {x = 10, y = 10, z = 10},
+			seed = 100,
 			octaves = 3,
-			persist = 0.7
+			persist = 0.2
 		},
 		 biomes = {--"canapa_swampr",
                    "rainforest_swamp",
@@ -214,7 +189,7 @@ if minetest.get_modpath("default") then
 		y_min = 0,
 		y_max = 0,
 		schematic = path .. "/schematics/canapa.mts",--minetest.get_modpath("cannabis").."/schematics/canapa.mts",
-	})
+	})]]
 end
 -- This file supplies hemp for the plantlife modpack
 -- Last revision:  2016-01-14
@@ -267,7 +242,7 @@ minetest.register_node('cannabis:flowering', {
    max_items = 3,
    items = {
       {items = {"cannabis:canapa_flower"}, rarity = 1 },
-    --  {items = {"cannabis:canapa_leaves"}, rarity = 1 },
+    
         {items = {"cannabis:canapa_seed"}, rarity = 1 },
    }}
 })
@@ -285,7 +260,6 @@ minetest.register_node('cannabis:climbing', {
 	sounds ={"cannabis_canapa_s3"},
 	selection_box = {
 		type = "wallmounted",
-		--wall_side = = <default>
-	},
+			},
 	buildable_to = true,
 })

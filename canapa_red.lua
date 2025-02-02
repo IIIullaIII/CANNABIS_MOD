@@ -22,7 +22,7 @@ sounds ={"cannabis_canapa_s"},
    items = {
       {items = {"cannabis:canapa_red"}, rarity = 1 },
       {items = {"cannabis:canapa_red_leaves"}, rarity = 1 },
-      --{items = {"cannabis:canapa_red_seed"}, rarity = 1 },
+      
    }
 },
 	after_dig_node = function(pos, node, metadata, digger)
@@ -95,7 +95,7 @@ minetest.register_abm({
 	            "default:dirt_with_grass",
 	            "default:dirt"},
 	interval = 2,
-	chance = 10,
+	chance = 2,
 	action = function(...)
 		minetest.grow_canapa_red(...)
 	end
@@ -117,12 +117,12 @@ if minetest.get_modpath("default") then
 		noise_params = {
 			offset = -0.3,
 			scale = 0.7,
-			spread = {x = 100, y =100, z =100},
+			spread = {x = 10, y =10, z =10},
 			seed = 354,
 			octaves = 3,
-			persist = 1.5
+			persist = 0.5
 		},
-        biomes = {--"canapa_swampr",
+        biomes = {
                    "sandstone_desert",
                    "savanna",
                    "taiga",
@@ -226,7 +226,7 @@ minetest.register_node('cannabis:climbing_r', {
 sounds ={"cannabis_canapa_s3"},
 	selection_box = {
 		type = "wallmounted",
-		--wall_side = = <default>
+		
 	},
 	buildable_to = true,
 })
