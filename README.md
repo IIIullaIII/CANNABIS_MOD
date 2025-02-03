@@ -2,8 +2,9 @@
 Version 03.02.2025
 
 Changelog :
-fixed mapgen
-removed  canapa spawn in water 
+fixed mapgen,  
+
+removed  canapa spawn in water .
 
 Version 22.12.2021                                                                                                                                          
 Changelog :                                                                                                                                                   
